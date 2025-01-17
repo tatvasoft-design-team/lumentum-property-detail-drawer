@@ -1,0 +1,23 @@
+.ag-custom-table * { font-family: Lato, sans-serif; } 
+.ag-custom-table { border-top: 1px solid #dddddd; border-radius: 0 0 4px 4px; overflow-x: auto; } 
+.ag-custom-table .ag-root-wrapper { border: 0; border-radius: 0 0 4px 4px; } 
+.ag-custom-table .ag-root { margin-bottom: -1px; width: 100%; } 
+.ag-custom-table .ag-header { border-bottom: 1px solid #dddddd; background: #F6F6F6; } 
+.ag-custom-table .ag-header-cell { padding: 0 10px; font-size: 14px; color: #333333; font-weight: 700; } 
+.ag-custom-table .ag-header-cell::before { display: none; } 
+.ag-custom-table .ag-header-cell-label, .ag-header-group-cell-label { padding: 0; } 
+.ag-custom-table .ag-cell-value.ag-cell { padding: 0 10px; font-size: 14px; line-height: 40px; color: #333333; } 
+.ag-custom-table .ag-row { background: #fff; border-bottom: 1px solid #dddddd; } 
+.ag-custom-table .ag-row:before { display: none !important; } 
+.ag-custom-table .ag-cell-focus:not(.ag-cell-range-selected):focus-within, .ag-cell-range-single-cell, .ag-cell-range-single-cell.ag-cell-range-handle, .ag-context-menu-open .ag-cell-focus:not(.ag-cell-range-selected), .ag-full-width-row.ag-row-focus:focus .ag-cell-wrapper.ag-row-group { border-color: transparent; } 
+.ag-custom-table .ag-header-cell .ag-sort-indicator-icon { display: inline-flex; width: 12px; height: 18px; padding: 0; align-items: center; justify-content: center; margin-left: 8px; } 
+.ag-custom-table .ag-header-cell .ag-sort-indicator-icon .ag-icon { width: 12px; height: 18px; display: inline-flex; background-size: 12px; background-position: center; background-repeat: no-repeat; } 
+.ag-custom-table .ag-header-cell .ag-sort-indicator-icon .ag-icon::before { display: none; } 
+.ag-custom-table .ag-header-cell .ag-sort-indicator-icon.ag-sort-ascending-icon .ag-icon { background-image: url('../images/sort-asc.svg'); } 
+.ag-custom-table .ag-header-cell .ag-sort-indicator-icon.ag-sort-descending-icon .ag-icon { background-image: url('../images/sort-desc.svg'); } 
+/* .ag-custom-table .ag-header-cell .ag-sort-indicator-icon.ag-sort-ascending-icon.ag-hidden + .ag-sort-indicator-icon.ag-sort-descending-icon.ag-hidden + span.ag-sort-indicator-icon.ag-sort-mixed-icon.ag-hidden { background-image: url('../images/sort-arrow.svg'); display: inline-flex !important; }  */
+.ag-custom-table .ag-layout-auto-height .ag-center-cols-viewport, .ag-layout-auto-height .ag-center-cols-container { min-height: inherit; } 
+.ag-custom-table .ag-body-horizontal-scroll .ag-body-horizontal-scroll-viewport { height: 11px !important; max-height: 11px !important; min-height: 11px !important; } 
+.ag-custom-table .ag-body-horizontal-scroll .ag-body-horizontal-scroll-viewport .ag-body-horizontal-scroll-container { height: 11px !important; max-height: 11px !important; min-height: 11px !important; } 
+.ag-custom-table .ag-body-horizontal-scroll .ag-body-horizontal-scroll-viewport::-webkit-scrollbar { width: 4px; height: 4px; } 
+.ag-custom-table .ag-body-horizontal-scroll .ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb { width: 4px; height: 4px; background: #dddddd; border-radius: 4px; } 
