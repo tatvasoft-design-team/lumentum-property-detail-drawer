@@ -155,16 +155,15 @@
 
 		<!-- Main Content -->
 		<main class="main-content user-setting-page">
-			<button class="btn btn-primary drawer-btn" data-bs-toggle="offcanvas"
-				data-drawer-btn="property-drawer-detail">Open</button>
+			<button class="btn btn-primary test" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPropertyD"
+				aria-controls="offcanvasPropertyD">Open</button>
 		</main>
 		<!-- End Main Content -->
 
 
 		<!-- Property details drawer -->
-		<!-- Download drawer -->
-		<div class="drawer-main" data-mcs-theme="light" data-drawer-wrapper="property-drawer-detail">
-			<div class="drawer-header">
+		<div class="offcanvas offcanvas-end c-drawer" tabindex="-1" id="offcanvasPropertyD" aria-labelledby="">
+			<div class="offcanvas-header">
 				<h5 class="offcanvas-title d-flex gap-2 align-items-center">8322 Atmore Ave North Port, FL. 34287
 				</h5>
 				<button class="btn btn-outline-white sq-btn sm"><img src="./images/ic-copy.svg" alt=""></button>
@@ -172,10 +171,10 @@
 				<div class="right-side">
 					<button class="btn btn-outline-white smd tx-16px">Print</button>
 					<button class="btn btn-outline-white smd tx-16px">Add to List</button>
-					<button type="button" class="btn-close drawer-close"></button>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
 			</div>
-			<div class="drawer-body inner-scroll">
+			<div class="offcanvas-body p-0 inner-scroll">
 				<div class="property-drawer-detail">
 					<div class="top-common-section">
 						<div class="family-residence-info">
@@ -288,8 +287,7 @@
 						<div class="row space-16">
 							<div class="col-12 col-xl-6">
 								<div class="property-value-box box-height-full">
-									<div class="img-thumb" data-bs-toggle="modal"
-										data-bs-target="#property-image-modal">
+									<div class="img-thumb" data-bs-toggle="modal" data-bs-target="#property-image-modal">
 										<img src="./images/image-thumb-main-5.png" alt="property">
 										<span class="propery-badge">+49</span>
 									</div>
@@ -729,8 +727,7 @@
 												<li class="tx">
 													<div class="fl-w">
 														<label class="fl">Bid Rate</label>
-														<input class="form-control h-44 text-sm" type="text"
-															value="$184.18">
+														<input class="form-control h-44 text-sm" type="text" value="$184.18">
 													</div>
 													<div class="fl-w">
 														<label class="fl">Over Bid</label>
@@ -1432,11 +1429,7 @@
 																<span class="received-date">19/07/2020 10:00 AM</span>
 															</div>
 															<div class="received-body">
-																<p>Lorem ipsum dolor sit amet consectetur. Mauris et
-																	dignissim aliquam elementum habitasse volutpat.
-																	Viverra nulla massa odio amet arcu enim lectus
-																	tristique. habitasse volutpat. Viverra nulla massa
-																	odio amet arcu enim lectus tristique.
+																<p>Lorem ipsum dolor sit amet consectetur. Mauris et dignissim aliquam elementum habitasse volutpat. Viverra nulla massa odio amet arcu enim lectus tristique. habitasse volutpat. Viverra nulla massa odio amet arcu enim lectus tristique.
 																</p>
 															</div>
 														</li>
@@ -1449,12 +1442,7 @@
 																<span class="received-date">07/05/2016 02:00 PM</span>
 															</div>
 															<div class="received-body">
-																<p>Lorem ipsum dolor sit amet consectetur. Mauris et
-																	dignissim aliquam elementum habitasse volutpat.
-																	Viverra nulla massa odio amet arcu enim lectus
-																	tristique. Lorem ipsum dolor sit amet consectetur.
-																	Mauris et dignissim aliquam elementum habitasse
-																	volutpat.
+																<p>Lorem ipsum dolor sit amet consectetur. Mauris et dignissim aliquam elementum habitasse volutpat. Viverra nulla massa odio amet arcu enim lectus tristique. Lorem ipsum dolor sit amet consectetur. Mauris et dignissim aliquam elementum habitasse volutpat. 
 																</p>
 															</div>
 														</li>
@@ -1467,12 +1455,7 @@
 																<span class="received-date">16/06/2020 05:30 PM</span>
 															</div>
 															<div class="received-body">
-																<p>Lorem ipsum dolor sit amet consectetur. Mauris et
-																	dignissim aliquam elementum habitasse volutpat.
-																	Viverra nulla massa odio amet arcu enim lectus
-																	tristique. Lorem ipsum dolor sit amet consectetur.
-																	Mauris et dignissim aliquam elementum habitasse
-																	volutpat.
+																<p>Lorem ipsum dolor sit amet consectetur. Mauris et dignissim aliquam elementum habitasse volutpat. Viverra nulla massa odio amet arcu enim lectus tristique. Lorem ipsum dolor sit amet consectetur. Mauris et dignissim aliquam elementum habitasse volutpat. 
 																</p>
 															</div>
 														</li>
@@ -1624,18 +1607,15 @@
 									</div>
 								</div>
 							</div>
-							<div class="tab-pane fade map-tab-outer" id="Map-pane" role="tabpanel"
-								aria-labelledby="Map-tab">
+							<div class="tab-pane fade map-tab-outer" id="Map-pane" role="tabpanel" aria-labelledby="Map-tab">
 								<ul class="nav nav-tabs switch-tab" id="mapDigiTab" role="tablist">
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="bing-tab" data-bs-toggle="tab"
-											data-bs-target="#bing" type="button" role="tab" aria-controls="bing"
-											aria-selected="true">Bing</button>
+										<button class="nav-link" id="bing-tab" data-bs-toggle="tab" data-bs-target="#bing" type="button"
+											role="tab" aria-controls="bing" aria-selected="true">Bing</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link active" id="google-tab" data-bs-toggle="tab"
-											data-bs-target="#google" type="button" role="tab" aria-controls="google"
-											aria-selected="false">Google</button>
+										<button class="nav-link active" id="google-tab" data-bs-toggle="tab" data-bs-target="#google"
+											type="button" role="tab" aria-controls="google" aria-selected="false">Google</button>
 									</li>
 								</ul>
 								<div class="tab-content p-0" id="mapDigiTabContent">
@@ -1659,8 +1639,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="tab-pane fade show active" id="google" role="tabpanel"
-										aria-labelledby="google-tab">
+									<div class="tab-pane fade show active" id="google" role="tabpanel" aria-labelledby="google-tab">
 										<div class="map-frame-outer">
 											<div class="mfo-left">
 												<div class="map-inner">
@@ -1686,8 +1665,7 @@
 								aria-labelledby="Scout-Info-tab">
 								Scout-Info
 							</div>
-							<div class="tab-pane fade" id="Tax-Info-pane" role="tabpanel"
-								aria-labelledby="Tax-Info-tab">
+							<div class="tab-pane fade" id="Tax-Info-pane" role="tabpanel" aria-labelledby="Tax-Info-tab">
 
 								<div class="outline-card last-tax-card">
 									<h6 class="h-title">Last Tax Bill</h6>
@@ -1754,8 +1732,7 @@
 							</div>
 
 
-							<div class="tab-pane fade" id="Mortgage-Info-pane" role="tabpanel"
-								aria-labelledby="Mortgage-Info-tab">
+							<div class="tab-pane fade" id="Mortgage-Info-pane" role="tabpanel" aria-labelledby="Mortgage-Info-tab">
 								<div class="table-card">
 									<div class="table-card-title">
 										<h4>Current Mortgages</h4>
@@ -1778,8 +1755,7 @@
 								aria-labelledby="MLS-Details-tab">
 								MLS-Details
 							</div>
-							<div class="tab-pane fade" id="Sale-History-pane" role="tabpanel"
-								aria-labelledby="Sale-History-tab">
+							<div class="tab-pane fade" id="Sale-History-pane" role="tabpanel" aria-labelledby="Sale-History-tab">
 								<div class="table-card">
 									<div class="table-card-title">
 										<h4>Sale History</h4>
@@ -1801,7 +1777,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="drawer-footer">
+			<div class="offcanvas-footer">
 				<p class="text-sm note"><strong>Discalimer:</strong> The content provided herein is for informational
 					purposes and no representation or warranty is made regarding its accuracy or completeness. Property
 					descriptions, documents, and pictures may not accurately describe or depict the property. You are
@@ -1809,11 +1785,7 @@
 				</p>
 			</div>
 		</div>
-		<!--END Property details drawer -->
-
-
-		<div class="modal fade property-image-modal" id="property-image-modal" tabindex="-1" aria-hidden="false"
-			aria-modal="true">
+		<div class="modal fade property-image-modal" id="property-image-modal" tabindex="-1" aria-hidden="false" aria-modal="true">
 			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 				<div class="modal-content ">
 					<div class="modal-header">
@@ -1823,12 +1795,12 @@
 					<div class="modal-body">
 						<div class="swiper property-detail-swiper">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png" alt="property">
-								</div>
-								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png" alt="property">
-								</div>
-								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png" alt="property">
-								</div>
+								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png"
+										alt="property"></div>
+								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png"
+										alt="property"></div>
+								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png"
+										alt="property"></div>
 							</div>
 							<!-- <div class="swiper-pagination"></div> -->
 							<div class="swiper-button-next"></div>
@@ -1838,7 +1810,8 @@
 				</div>
 			</div>
 		</div>
-
+		<!--END Property details drawer -->
+		
 	</div>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>

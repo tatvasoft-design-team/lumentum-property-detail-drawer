@@ -749,15 +749,6 @@
 
 // dropdown menu
 // ---------------------------------------------------------------------------
-// .dropdown {
-//     &.on-hover:hover {
-//         .dropdown-menu {
-//             display: block;
-//             margin-top: 0; /* remove the gap so it doesn't close */
-//         }
-//     }
-// }
-
 .dropdown .btn {
     &[aria-expanded="true"] {
         .arrow {
@@ -975,7 +966,6 @@
         }
     }
 }
-
 
 
 // card

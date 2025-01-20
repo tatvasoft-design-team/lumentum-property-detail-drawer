@@ -388,29 +388,44 @@ $(document).ready(function () {
       $(this).addClass("disable");
     }
   });
-  // Scrollable tabbing 
-   // on textbox focus ------------------------------------
-   $(".fl-w .form-control").on("focus", function () {
-    let _this = $(this);
-    _this.siblings(".fl").addClass("active focus");
-}).on("blur", function () {
-    let _this = $(this);
-    _this.siblings(".fl").removeClass("focus");
-    if (_this.val().length > 0) {
+  // Scrollable tabbing
+  // on textbox focus ------------------------------------
+  $(".fl-w .form-control")
+    .on("focus", function () {
+      let _this = $(this);
+      _this.siblings(".fl").addClass("active focus");
+    })
+    .on("blur", function () {
+      let _this = $(this);
+      _this.siblings(".fl").removeClass("focus");
+      if (_this.val().length > 0) {
         _this.siblings(".fl").addClass("active");
-    } else {
+      } else {
         _this.siblings(".fl").removeClass("active");
-    }
-});
+      }
+    });
 
-// on textbox value exist ------------------------------------
-if ($(".fl-w .form-control").length > 0) {
+  // on textbox value exist ------------------------------------
+  if ($(".fl-w .form-control").length > 0) {
     for (let i = 0; i < $(".fl-w .form-control").length; i++) {
-        if ($(".fl-w .form-control").eq(i).val().length > 0) {
-            $(".fl-w .form-control").eq(i).siblings(".fl").addClass("active");
-        }
+      if ($(".fl-w .form-control").eq(i).val().length > 0) {
+        $(".fl-w .form-control").eq(i).siblings(".fl").addClass("active");
+      }
     }
-}
+  }
+
+  $(document).delegate(".drawer-btn", "click", function () {
+    var _this = $(this).attr("data-drawer-btn");
+    $("body").addClass("drawer-open");
+    $(".drawer-main[data-drawer-wrapper='" + _this + "']").addClass("open");
+    $("body").removeClass("summary-drawer-open");
+  });
+
+  $(".drawer-close").click(function () {
+    $("body").removeClass("drawer-open");
+    $(".drawer-main").removeClass("open");
+  });
+
   //End property details drawer 13-01-25
 
   // all functions here -------
