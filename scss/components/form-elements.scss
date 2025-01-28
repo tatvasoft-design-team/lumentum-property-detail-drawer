@@ -154,6 +154,10 @@
     }
 }
 
+textarea.form-control {
+    min-height: 102px;
+}
+
 .rounded-search {
     .form-control {
         min-height: 36px;
@@ -395,7 +399,7 @@
     box-shadow: none !important;
 
     &.mw {
-        min-width: 110px;
+        min-width: 110px !important;
     }
 }
 
@@ -1039,6 +1043,10 @@
         --bs-modal-width: 576px;
     }
 
+    .modal-md {
+        --bs-modal-width: 420px;
+    }
+
     .btn-close {
         width: 24px;
         min-width: 24px;
@@ -1276,6 +1284,9 @@
     background-color: #3CBD95;
     padding: 4px 10px;
     border-radius: 30px;
+    min-width: 66px;
+    text-align: center;
+    display: inline-block;
 
     &.pink {
         background-color: #EF86B9;
@@ -1291,6 +1302,10 @@
 
     &.red {
         background-color: #FF6464;
+    }
+
+    &.green {
+        background-color: #45963E;
     }
 }
 

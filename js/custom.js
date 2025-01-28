@@ -421,12 +421,48 @@ $(document).ready(function () {
     $("body").removeClass("summary-drawer-open");
   });
 
+  $(document).delegate(".second-level-drawer-btn", "click", function () {
+    var _this = $(this).attr("data-drawer-btn");
+    $("body").addClass("second-level-drawer-open");
+    $(".drawer-main[data-drawer-wrapper='" + _this + "']").addClass(
+      "secondary-open"
+    );
+  });
+
+  $(document).delegate(".third-level-drawer-btn", "click", function () {
+    var _this = $(this).attr("data-drawer-btn");
+    $("body").addClass("third-level-drawer-open");
+    $(".drawer-main[data-drawer-wrapper='" + _this + "']").addClass(
+      "third-level-open"
+    );
+  });
+
   $(".drawer-close").click(function () {
     $("body").removeClass("drawer-open");
     $(".drawer-main").removeClass("open");
   });
 
+  $(".second-level-drawer-close").click(function () {
+    $("body").removeClass("second-level-drawer-open");
+    $(".drawer-main").removeClass("secondary-open");
+  });
+
+  $(".third-level-drawer-close").click(function () {
+    $("body").removeClass("third-level-drawer-open");
+    $(".drawer-main").removeClass("third-level-open");
+  });
+
   //End property details drawer 13-01-25
+
+  // 22-01-25
+  $(".list-radio-group .form-check-input").on("change", function () {
+    $(this)
+      .closest(".list-radio-group")
+      .find(".form-check-wrapper")
+      .removeClass("selected-radio");
+    $(this).closest(".form-check-wrapper").addClass("selected-radio");
+  });
+  // End 22-01-25
 
   // all functions here -------
   $(".primary-market-table-wrapper .slide-arrow").on("click", function () {

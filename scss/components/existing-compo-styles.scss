@@ -1,2 +1,115 @@
 @use '../base/break-points';
 @use '../base/colors';
+
+.custom-file {
+    position: relative;
+    height: 42px;
+
+    .custom-file-input {
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .custom-file-label {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        font-weight: 400;
+        padding: 11px 10px;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 18px;
+        box-shadow: none !important;
+        color: #444;
+        background-color: #fff;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: 90px;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 3;
+            display: block;
+            height: 100%;
+            padding: 11px 10px;
+            color: #666666;
+            font-size: 14px;
+            line-height: 18px;
+            content: "Browse";
+            background-color: #F7F8FA;
+            border-left: inherit;
+            border-radius: 0 .25rem .25rem 0;
+        }
+    }
+}
+
+.list-radio-group {
+    .form-check-wrapper {
+        border: 1px solid #e5e5e5;
+        border-radius: 6px;
+        padding: 15px 12px;
+
+        +.form-check-wrapper {
+            margin-top: 12px;
+        }
+
+        .form-check {
+            .form-check-input {
+                top: 2px;
+            }
+        }
+
+        &.selected-radio {
+            border-color: #93b5d3;
+            background-color: #f7f8fa;
+
+            .form-check {
+                margin-bottom: 8px;
+            }
+
+            .controls-field {
+                display: block;
+
+                .mb-10 {
+                    margin-bottom: 10px;
+                }
+
+                .form-check {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .controls-field {
+            display: none;
+        }
+    }
+
+    .form-check {
+        margin-bottom: 0;
+        min-height: auto;
+
+        &:hover {
+            .form-check-label {
+                color: #444;
+            }
+        }
+    }
+
+    .form-check-label {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

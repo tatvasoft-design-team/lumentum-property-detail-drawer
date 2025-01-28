@@ -3,6 +3,11 @@
 @use './base/break-points';
 @use './base/mixins';
 
+// here developer made custom common stickable drawer and applied its own stylesheet
+// So design should manage with custom class with drawer-main class, its mandatory.
+//  devloper structure like
+//  
+
 .drawer-main {
   --bs-offcanvas-width: calc(100% - 75px);
   --bs-offcanvas-padding-y: 9px;
@@ -93,7 +98,7 @@
       }
     }
 
-    .offcanvas-title {
+    .drawer-title {
       font-size: 20px;
       font-weight: 500;
       line-height: 24px;
@@ -106,11 +111,7 @@
   }
 
   .disclaimer-body {
-    padding: 55px 25px 15px;
-
-    @include break-points.bp("xs-max") {
-      padding: 55px 18px 15px;
-    }
+    padding: 16px;
 
     .disclaimer-text {
       margin-bottom: 17px;
@@ -140,8 +141,6 @@
       }
     }
   }
-
-
 
   &.upsell-drawar {
     width: 90%;
@@ -556,30 +555,30 @@
         }
       }
 
-      &.upload-attachment-drawer {
-        width: 991px;
-        z-index: 913;
+      // &.upload-attachment-drawer {
+      //   width: 991px;
+      //   z-index: 913;
 
-        @include break-points.bp("md-max") {
-          width: 575px;
-        }
+      //   @include break-points.bp("md-max") {
+      //     width: 575px;
+      //   }
 
-        @include break-points.bp("xs-max") {
-          width: 330px;
-        }
+      //   @include break-points.bp("xs-max") {
+      //     width: 330px;
+      //   }
 
-        .disclaimer-header {
-          width: 991px;
+      //   .disclaimer-header {
+      //     width: 991px;
 
-          @include break-points.bp("md-max") {
-            width: 575px;
-          }
+      //     @include break-points.bp("md-max") {
+      //       width: 575px;
+      //     }
 
-          @include break-points.bp("xs-max") {
-            width: 330px;
-          }
-        }
-      }
+      //     @include break-points.bp("xs-max") {
+      //       width: 330px;
+      //     }
+      //   }
+      // }
 
       &.bank-info-drawer {
         width: calc(100% - 78px);
@@ -1062,6 +1061,30 @@
     }
   }
 
+  .link-property-card .outline-card {
+    border: 1px solid rgba(0, 86, 161, 0.40);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0;
+
+    @include break-points.bp('sm-max') {
+      padding: 15px;
+    }
+
+    .h2 {
+      margin-bottom: 5px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 32px;
+      color: #0056a1;
+
+      @include break-points.bp('sm-max') {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+
   .input-val {
     font-size: 14px;
     line-height: 18px;
@@ -1511,6 +1534,49 @@
           object-position: center;
         }
       }
+    }
+  }
+
+  .neighborhoodandschool-info-card {
+    .map-inner {
+      width: 100%;
+      min-height: 332px;
+      height: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+
+      iframe {
+        min-height: 332px;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
+
+// pload-attachment-drawer
+// ---------------------------------------------------------------------------
+.drawer-main.upload-attachment-drawer {
+  width: var(--bs-offcanvas-width);
+  z-index: 913;
+
+  .btn-close {
+    top: 10px;
+  }
+
+  @include break-points.bp("xs-max") {
+    width: 100%;
+  }
+
+  .disclaimer-header {
+    width: 991px;
+
+    @include break-points.bp("md-max") {
+      width: 575px;
+    }
+
+    @include break-points.bp("xs-max") {
+      width: 330px;
     }
   }
 }

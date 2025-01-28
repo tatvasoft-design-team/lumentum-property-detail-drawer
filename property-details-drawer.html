@@ -155,23 +155,22 @@
 
 		<!-- Main Content -->
 		<main class="main-content user-setting-page">
-			<button class="btn btn-primary drawer-btn" data-bs-toggle="offcanvas"
-				data-drawer-btn="property-drawer-detail">Open</button>
+			<button class="btn btn-primary drawer-btn" data-drawer-btn="property-drawer-detail">Open</button>
 		</main>
 		<!-- End Main Content -->
 
 
 		<!-- Property details drawer -->
-		<!-- Download drawer -->
 		<div class="drawer-main" data-mcs-theme="light" data-drawer-wrapper="property-drawer-detail">
 			<div class="drawer-header">
-				<h5 class="offcanvas-title d-flex gap-2 align-items-center">8322 Atmore Ave North Port, FL. 34287
+				<h5 class="drawer-title d-flex gap-2 align-items-center">8322 Atmore Ave North Port, FL. 34287
 				</h5>
 				<button class="btn btn-outline-white sq-btn sm"><img src="./images/ic-copy.svg" alt=""></button>
 
 				<div class="right-side">
 					<button class="btn btn-outline-white smd tx-16px">Print</button>
-					<button class="btn btn-outline-white smd tx-16px">Add to List</button>
+					<button class="btn btn-outline-white smd tx-16px" data-bs-toggle="modal"
+						data-bs-target="#marketListModal">Add to List</button>
 					<button type="button" class="btn-close drawer-close"></button>
 				</div>
 			</div>
@@ -638,57 +637,6 @@
 									<div class="left-col">
 										<div class="outline-card delinquent-tax-card">
 											<h6 class="h-title">Delinquent Tax Advertised for Auction (2025)</h6>
-											<!-- <div class="row space-16">
-												<div class="col-12 col-sm-6 col-lg-4 col-xl">
-													<div class="input-val">
-														<label>Auction</label>
-														<p>2025</p>
-													</div>
-												</div>
-												<div class="col-12 col-sm-6 col-lg-4 col-xl">
-													<div class="input-val">
-														<label>Delinquent</label>
-														<p>2024</p>
-													</div>
-												</div>
-												<div class="col-12 col-sm-6 col-lg-4 col-xl">
-													<div class="input-val">
-														<label>Adv Number</label>
-														<p>--</p>
-													</div>
-												</div>
-												<div class="col-12 col-sm-6 col-lg-4 col-xl">
-													<div class="input-val">
-														<label>Batch</label>
-														<p>--</p>
-													</div>
-												</div>
-												<div class="col-12 col-sm-6 col-lg-4 col-xl">
-													<div class="input-val">
-														<label>Owner</label>
-														<p>1103 ISLAND LLC</p>
-													</div>
-												</div>
-												<div class="col-12 col-sm-6 col-lg-4 col-xl">
-													<div class="input-val">
-														<label>Face</label>
-														<p>$184.18</p>
-													</div>
-												</div>
-												<div class="col-12 col-sm-6 col-lg-4 col-xl">
-													<div class="fl-w">
-														<label class="fl">Bid Rate</label>
-														<input class="form-control h-44 text-sm" type="text"
-															value="$184.18">
-													</div>
-												</div>
-												<div class="col-12 col-sm-6 col-lg-4 col-xl">
-													<div class="fl-w">
-														<label class="fl">Over Bid</label>
-														<input class="form-control h-44 text-sm" type="text">
-													</div>
-												</div>
-											</div> -->
 											<ul class="d-flex list">
 												<li class="">
 													<div class="input-val">
@@ -1512,7 +1460,8 @@
 												<div class="tab-pane fade tags-tab" id="Tags" role="tabpanel"
 													aria-labelledby="Tags-tab">
 													<div class="p-14p_16p bb">
-														<button class="btn btn-primary smd with-ic">
+														<button class="btn btn-primary smd with-ic"
+															data-bs-toggle="modal" data-bs-target="#tagsModal">
 															<em class="i">
 																<img src="./images/add-task.svg" alt="" />
 															</em>
@@ -1549,7 +1498,9 @@
 												<div class="tab-pane fade parcel-tab" id="parcel" role="tabpanel"
 													aria-labelledby="parcel-tab">
 													<div class="p-14p_16p bb">
-														<button class="btn btn-primary smd with-ic">
+														<button
+															class="btn btn-primary smd with-ic third-level-drawer-btn"
+															data-drawer-btn="uploadAttachment">
 															<em class="i">
 																<img src="./images/add-task.svg" alt="" />
 															</em>
@@ -1618,6 +1569,38 @@
 															</button>
 														</li>
 													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="outline-card mb-0 neighborhoodandschool-info-card">
+											<h6 class="h-title">Neighborhood and Local School Information</h6>
+											<div class="row space-16 mb-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Neighborhood Name</label>
+														<p>Country Creek</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Neighborhood Type</label>
+														<p>Subdivision</p>
+													</div>
+												</div>
+											</div>
+											<div class="row space-16">
+												<div class="col-12 col-xl-8">
+													<div class="ag-custom-table with-border" id="NeighborhoodandSchoolInfo"></div>
+												</div>
+												<div class="col-12 col-xl-4">
+													<div class="map-inner">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.3624289636427!2d72.59707016423944!3d23.010461272556476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85cedfe04b41%3A0xc3d86f1bc142749b!2sEKA%20Arena!5e0!3m2!1sen!2sin!4v1650601907008!5m2!1sen!2sin"
+															style="border:0;" allowfullscreen="" loading="lazy"
+															referrerpolicy="no-referrer-when-downgrade"></iframe>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -1791,7 +1774,32 @@
 							</div>
 							<div class="tab-pane fade" id="Linked-Properties-pane" role="tabpanel"
 								aria-labelledby="Linked-Properties-tab">
-								Linked-Properties
+								<div class="row link-property-card space-16">
+									<div class="col-12 col-sm-6 col-xl-3">
+										<div class="outline-card">
+											<h2 class="h2">7</h2>
+											<span>Total Property Owned</span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-3">
+										<div class="outline-card">
+											<h2 class="h2">$488,286</h2>
+											<span>Total Open Loan Amount</span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-3">
+										<div class="outline-card">
+											<h2 class="h2">$1,299,027</h2>
+											<span>Total Estimated Value</span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-3">
+										<div class="outline-card">
+											<h2 class="h2">$1,299,027</h2>
+											<span>Total Estimated Value</span>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="tab-pane fade" id="Comparables-Listings-pane" role="tabpanel"
 								aria-labelledby="Comparables-Listings-tab">
@@ -1809,9 +1817,42 @@
 				</p>
 			</div>
 		</div>
+
+		<!-- Upload Attachment Drawer HTML Start -->
+		<div class="drawer-main upload-attachment-drawer" data-mcs-theme="light" data-drawer-wrapper="uploadAttachment">
+			<div class="drawer-header">
+				<h5 class="drawer-title d-flex gap-2 align-items-center">Upload Attachment
+				</h5>
+				<button type="button" class="btn-close third-level-drawer-close"></button>
+			</div>
+			<div class="disclaimer-body upload-attachment-body inner-scroll">
+				<div class="upload-option">
+					<div class="form-group">
+						<label class="form-label mb-1 text-sm">Attach File</label>
+						<div class="custom-file">
+							<input type="file" name="theFile" id="inputFile" class="custom-file-input">
+							<label class="custom-file-label" for="inputFile">Choose file</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label b-1 text-sm">File Name</label>
+					<input type="text" class="form-control" placeholder="File Name">
+				</div>
+				<div class="form-group">
+					<label class="form-label b-1 text-sm">Description</label>
+					<textarea class="form-control" placeholder="Description"></textarea>
+				</div>
+				<div class="d-flex gap-3 flex-wrap">
+					<button type="button" class="btn btn-primary mw">Add</button>
+					<button type="button" class="btn btn-outline-primary mw third-level-drawer-close">Cancel</button>
+				</div>
+			</div>
+		</div>
+
 		<!--END Property details drawer -->
 
-
+		<!-- property image gallery Modal -->
 		<div class="modal fade property-image-modal" id="property-image-modal" tabindex="-1" aria-hidden="false"
 			aria-modal="true">
 			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -1838,6 +1879,124 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Add to Marketing List Modal -->
+		<div class="modal fade" id="marketListModal" tabindex="-1" aria-labelledby="marketListLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-sms">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title h5" id="marketListLabel">Add to List</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="list-radio-group">
+							<div class="form-check-wrapper selected-radio">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="marketList"
+										id="addToMarketingList" checked>
+									<label class="form-check-label" for="addToMarketingList">
+										Add to List
+									</label>
+								</div>
+								<div class="controls-field">
+									<div class="select2-dropdownParent">
+										<select class="custom-Select2 w-100" name="state"
+											data-placeholder="Select List">
+											<option value="" class="d-none placeholder" selected>Select List</option>
+											<option value="2">2024</option>
+											<option value="3">2023</option>
+											<option value="4">2022</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-check-wrapper">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="marketList"
+										id="newMarketingList">
+									<label class="form-check-label" for="newMarketingList">
+										New List
+									</label>
+								</div>
+								<div class="controls-field">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Enter New List Name">
+									</div>
+									<div class="select2-dropdownParent">
+										<select class="custom-Select2-no-search w-100" name="state"
+											data-placeholder="Favorites">
+											<option value="" class="d-none placeholder" selected>Favorites</option>
+											<option value="1">Favorites</option>
+											<option value="2">Marketing</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary mw">Save</button>
+						<button type="button" class="btn btn-outline-primary mw" data-bs-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal tagsModal -->
+		<div class="modal fade tagsmodal" id="tagsModal" tabindex="-1">
+			<div class="modal-dialog modal-smd modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<h5 class="modal-title">Tags</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body pb-0">
+						<div class="row space-16">
+							<div class="col-12 col-sm-8">
+								<input type="text h-100" class="form-control w-100 taginput"
+									value="AUTO OK-2019,2019 LM,Road" data-role="tagsinput" />
+							</div>
+							<div class="col-12 col-sm-4">
+								<div class="card-mostused-link inner-scroll text-sm">
+									<label class="text-sm mb-1 d-block fw-medium">Most Used Tags</label>
+									<ul>
+										<li>
+											<a href="#" title="Exclude">Exclude</a>
+										</li>
+										<li>
+											<a href="#" title="OK-2018">OK-2018</a>
+										</li>
+										<li>
+											<a href="#" title="OK-2017">OK-2017</a>
+										</li>
+										<li>
+											<a href="#" title="OK-2019">OK-2019</a>
+										</li>
+										<li>
+											<a href="#" title="AUTO OK-2019">AUTO OK-2019</a>
+										</li>
+										<li>
+											<a href="#" title="Road">Road</a>
+										</li>
+										<li>
+											<a href="#" title="2019 LM">2019 LM</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<p class="text-xs text-gray mt-2">Please remove the tags you want deleted by clicking on the "X"
+							or
+							enter the tags that you want attached to the selected parcel.</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary mw">Save</button>
+						<button class="btn btn-outline-primary mw" data-bs-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 	</div>
 	<script type="text/javascript" src="js/main.js"></script>

@@ -5,6 +5,7 @@
 @import "bootstrap-tagsinput.css";
 @import "perfect-scrollbar.css";
 @import "swiper.css";
-@import "custom-tables.css";
+@import "datatable.min.css";
+@import "datatable-fixed.css";
 @import "style.css";
 @import "dev-style.css";

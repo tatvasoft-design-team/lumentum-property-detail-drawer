@@ -877,12 +877,6 @@ body {
 
 // custom modals 
 // ---------------------------------------------------------------------------
-.modal {
-    .modal-md {
-        --bs-modal-width: 420px;
-    }
-}
-
 .property-image-modal {
     .modal-dialog {
         --bs-modal-width: 934px;
@@ -922,6 +916,52 @@ body {
         .swiper-button-prev {
             --swiper-navigation-size: 26px;
             --swiper-navigation-color: #0056A1;
+        }
+    }
+}
+
+.tagsmodal {
+    .bootstrap-tagsinput {
+        height: 100%;
+        align-items: flex-start;
+        align-content: baseline;
+        max-height: 228px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #BCBCBC;
+            opacity: 0.4;
+            border-radius: 12px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: #b4b2b2;
+            opacity: 0.4;
+        }
+    }
+
+    .card-mostused-link {
+        background-color: #F7F8FA;
+        padding: 14px 12px;
+        border: 1px solid #D2D5D8;
+        border-radius: 4px;
+        max-height: 226px;
+
+        >ul li {
+            &:not(:last-child) {
+                margin-bottom: 6px;
+            }
+
+            font-weight: 500;
         }
     }
 }

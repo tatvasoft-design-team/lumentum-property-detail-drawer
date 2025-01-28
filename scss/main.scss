@@ -12,6 +12,7 @@
 @use 'components/form-elements.scss';
 @use 'components/existing-compo-styles.scss';
 @use 'components/header.scss';
+@use 'components/custom-tables.scss';
 
 /* pages style */
 @use 'pages/dashboard.scss';
@@ -20,5 +21,5 @@
 
 /* resets Stylesheet */
 @use 'base/layout';
-@use 'style.scss';
 @use 'drawer';
+@use 'style.scss';

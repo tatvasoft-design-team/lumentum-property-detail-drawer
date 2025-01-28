@@ -8,6 +8,8 @@ document.write(
 	'<script type="text/javascript" src="js/bootstrap-tagsinput.min.js"></script>' +
 	'<script type="text/javascript" src="js/perfect-scrollbar.js"></script>' +
 	'<script type="text/javascript" src="js/ag-grid-community.min.js"></script>' +
+	'<script type="text/javascript" src="js/datatables.min.js"></script>' +
+	'<script type="text/javascript" src="js/dataTables.fixedColumns.min.js"></script>' +
 	'<script type="text/javascript" src="js/swiper.js"></script>' +
 	'<script type="text/javascript" src="js/custom.js"></script>' +	
 	'<script type="text/javascript" src="js/custom-tables.js"></script>'
