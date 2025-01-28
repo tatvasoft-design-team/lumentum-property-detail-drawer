@@ -4406,8 +4406,8 @@ h5 {
 .property-drawer-detail .property-info-block .tab-content {
   padding: 10px;
 }
-.property-drawer-detail .property-info-block .card-text-val {
-  height: 100%;
+.property-drawer-detail .property-info-block .card-text-val + .card-text-val {
+  margin-top: 8px;
 }
 .property-drawer-detail .property-info-block .primary-tab li .nav-link {
   padding: 9.5px 15px;

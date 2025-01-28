@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Main Page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Start Header -->
+		<header class="header">
+			<div class="backdrop"></div>
+			<div class="header-left">
+				<div class="hamburger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="index.html" class="logo" title="Lumentum">
+					<img src="images/main-logo.svg" alt="logo">
+				</a>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#" title="Dashboard" class="active">
+							<em class="i"><img src="images/dashboard-icon.svg" alt="" /></em>
+							Dashboard
+						</a>
+					</li>
+					<li>
+						<a href="#" title="DigiMap">
+							<em class="i"><img src="images/location-icon.svg" alt="" /></em>
+							DigiMap
+						</a>
+					</li>
+					<li>
+						<a href="#" title="OTC">
+							<em class="i"><img src="images/OTC-icon.svg" alt="" /></em>
+							OTC
+						</a>
+					</li>
+					<li>
+						<span class="submenu-arrow"><img src="images/dropdown-white.svg" alt="" /></span>
+						<a href="#" title="Auctions">
+							<em class="i"><img src="images/auction-icon.svg" alt="" /></em>
+							Auctions
+						</a>
+						<ul class="submenu-content">
+							<li><a href="#" title="PM Summary">PM Summary</a></li>
+							<li><a href="#" title="PM Prospects">PM Prospects</a></li>
+							<li><a href="#" title="Tax Deeds">Tax Deeds</a></li>
+							<li><a href="#" title="Foreclosures">Foreclosures</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="submenu-arrow"><img src="images/dropdown-white.svg" alt="" /></span>
+						<a href="#" title="AMP">
+							<em class="i"><img src="images/portfolio-icon.svg" alt="" /></em>
+							AMP
+						</a>
+						<ul class="submenu-content">
+							<li><a href="#" title="Asset Research">Asset Research</a></li>
+							<li><a href="#" title="Transaction Research">Transaction Research</a></li>
+							<li><a href="#" title="Reconciliation – Bank">Reconciliation – Bank</a></li>
+							<li><a href="#" title="Reconciliation - Assets">Reconciliation - Assets</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<!-- End Main Navigation -->
+
+			<ul class="user-action">
+				<li>
+					<button class="btn ic-btn">
+						<img src="images/ic-page.svg" alt="" />
+					</button>
+				</li>
+				<li>
+					<button class="btn ic-btn">
+						<img src="images/download-report-white.svg" alt="" />
+					</button>
+				</li>
+				<li>
+					<button class="btn ic-btn">
+						<div class="badge-wrapper">
+							<img src="images/notification.svg" alt="" />
+							<span class="badge">03</span>
+						</div>
+					</button>
+				</li>
+				<li>
+					<button class="btn ic-btn">
+						<div class="badge-wrapper">
+							<img src="images/ic-cart.svg" alt="" />
+							<span class="badge">03</span>
+						</div>
+					</button>
+				</li>
+				<li>
+					<div class="dropdown user-menu-box">
+						<a class="user-menu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<em><img src="images/user-image.png" alt="user"></em>
+						</a>
+						<div class="dropdown-menu no-click-close user-menu-outer dropdown-menu-lg-end">
+							<select class="custom-Select2-no-search no-parent">
+								<option value="1" selected>Sarah Watson (10171)</option>
+								<option value="2">Sarah Watson (10172)</option>
+								<option value="3">Sarah Watson (10173)</option>
+							</select>
+
+							<p class="user-name">
+								Welcome, <strong class="text-bold">Sarah!</strong>
+							</p>
+
+							<ul>
+								<li>
+									<a href="my-profile.html" title="My Profile">
+										<em class="i"><img src="./images/profile-icon.svg" alt="" /></em>
+										My Profile
+									</a>
+								</li>
+								<li>
+									<a href="access-denied.html" title="Support">
+										<em class="i"><img src="./images/support-icon.svg" alt="" /></em>
+										Support
+									</a>
+								</li>
+								<li>
+									<a href="manage-users.html" title="Settings">
+										<em class="i"><img src="./images/settings-icon.svg" alt="" /></em>
+										Settings
+									</a>
+								</li>
+								<li>
+									<a href="index.html" title="Logout">
+										<em class="i"><img src="./images/logout-icon.svg" alt="" /></em>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</header>
+		<!-- End Header -->
+
+		<!-- Main Content -->
+		<main class="main-content">
+			<div class="table-outer has-no-header has-no-pagination">
+				<div class="table-responsive">
+					<table id="taskListTable" class="display" width="100%"></table>
+				</div>
+			</div>
+		</main>
+		<!-- End Main Content -->
+
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -909,8 +909,8 @@
       padding: 10px;
     }
 
-    .card-text-val {
-      height: 100%;
+    .card-text-val + .card-text-val {
+      margin-top: 8px;
     }
 
     .primary-tab li {
