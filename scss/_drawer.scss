@@ -70,9 +70,9 @@
         opacity: 0.6;
       }
 
-      @include break-points.bp (xs-max) {
-        top: 18px;
-      }
+      // @include break-points.bp (xs-max) {
+      //   top: 18px;
+      // }
     }
 
     .right-side {
@@ -909,7 +909,7 @@
       padding: 10px;
     }
 
-    .card-text-val + .card-text-val {
+    .card-text-val+.card-text-val {
       margin-top: 8px;
     }
 
@@ -1550,6 +1550,13 @@
         width: 100% !important;
         height: 100% !important;
       }
+    }
+  }
+
+  .confidential-block {
+    min-height: calc(100vh - 410px);
+    @include break-points.bp (lg-max) {
+      min-height: auto;
     }
   }
 }
