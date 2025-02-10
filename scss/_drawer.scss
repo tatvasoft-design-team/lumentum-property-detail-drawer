@@ -125,6 +125,10 @@
   .drawer-body {
     flex: 1;
     overflow: hidden auto;
+
+    &.p-16 {
+      padding: 16px;
+    }
   }
 
   .drawer-footer {
@@ -1048,6 +1052,10 @@
     margin-bottom: 16px;
     overflow: hidden;
 
+    &.bg-gray {
+      background-color: #F8F8F8;
+    }
+
     .h-title {
       font-size: 16px;
       font-weight: 700;
@@ -1555,8 +1563,118 @@
 
   .confidential-block {
     min-height: calc(100vh - 410px);
+
     @include break-points.bp (lg-max) {
       min-height: auto;
+    }
+  }
+
+  // scout tab
+  .scout-without-data {
+    padding: 80px 0;
+    min-height: calc(100vh - 580px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .text-md {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #666666;
+      margin-bottom: 18px;
+    }
+  }
+
+  .scout-tab-head {
+    margin-bottom: 6px;
+
+    .select2.select2-container {
+      width: 208px !important;
+      max-width: 100%;
+
+      @include break-points.bp (xs-max) {
+        width: 100% !important;
+      }
+    }
+
+    @include break-points.bp (xs-max) {
+      .right-btns {
+        width: 100%;
+
+        >label {
+          width: 100%;
+        }
+      }
+
+      .select2-dropdownParent,
+      .btn {
+        width: calc(50% - 8px);
+      }
+    }
+  }
+
+  .scout-tab-propertyimg-list {
+    .image-uploaded-layout {
+      min-width: 179px;
+
+      @include break-points.bp (lg-max) {
+        min-width: auto;
+      }
+    }
+
+    .scout-add-img-card {
+      border-radius: 10px;
+      border: 1px dashed rgba(0, 86, 161, 0.4);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16.8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 122px;
+      height: 160px;
+      color: #0056A1;
+      gap: 4px;
+      cursor: pointer;
+
+      @include break-points.bp (lg-max) {
+        min-width: auto;
+      }
+
+      .i {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .scout-que-grid {
+    &.row {
+      margin-top: -16px;
+      margin-bottom: -16px;
+
+      @include break-points.bp (sm-max) {
+        margin-top: -8px;
+        margin-bottom: -8px;
+      }
+    }
+
+    .col-12 {
+      margin-top: 0;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #D2D5D8;
+
+      @include break-points.bp (sm-max) {
+        border-bottom: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
     }
   }
 }
@@ -1585,5 +1703,19 @@
     @include break-points.bp("xs-max") {
       width: 330px;
     }
+  }
+}
+
+.drawer-main.scout-property-drawer {
+  width: 966px;
+  max-width: 100%;
+  z-index: 913;
+
+  .btn-close {
+    top: 10px;
+  }
+
+  @include break-points.bp("xs-max") {
+    width: 100%;
   }
 }

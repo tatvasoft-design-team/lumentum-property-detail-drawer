@@ -127,19 +127,34 @@ img {
   line-height: 21.6px;
 }
 
-.tx-12px {
-  font-size: 12px;
-  line-height: 16px;
+.text-12 {
+  font-size: 12px !important;
+  line-height: 16px !important;
 }
 
-.tx-14px {
-  font-size: 14px;
-  line-height: 18px;
+.text-13 {
+  font-size: 13px !important;
+  line-height: 17px !important;
 }
 
-.tx-16px {
+.text-sm {
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+
+.text-16 {
   font-size: 16px !important;
   line-height: 20px !important;
+}
+
+.text-18 {
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+
+.text-20 {
+  font-size: 20px !important;
+  line-height: 24px !important;
 }
 
 .fw-black {
@@ -166,24 +181,8 @@ img {
   color: #333 !important;
 }
 
-.text-xs {
-  font-size: 12px !important;
-  line-height: 16px !important;
-}
-
-.text-sm {
-  font-size: 14px !important;
-  line-height: 18px !important;
-}
-
-.text-13 {
-  font-size: 13px !important;
-  line-height: 17px !important;
-}
-
-.text-16 {
-  font-size: 16px !important;
-  line-height: 20px !important;
+.text-gray06 {
+  color: #888888 !important;
 }
 
 input[type="text"]::-ms-clear {
@@ -196,6 +195,19 @@ input[type="text"]::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
+}
+
+.round-chip {
+  background-color: #0056A1;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-style: normal;
 }
 
 .card-box {

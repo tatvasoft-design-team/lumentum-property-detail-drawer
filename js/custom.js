@@ -464,6 +464,39 @@ $(document).ready(function () {
   });
   // End 22-01-25
 
+  // image upload file 5-2-25
+  $(".image-upload-wrapper .image-upload").change(function (event) {
+    const file = event.target.files[0];
+    const wrapper = $(this).closest(".image-upload-wrapper");
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        // Now use the wrapper reference here
+        wrapper
+          .find(".image-uploaded-layout .thumb")
+          .html('<img src="' + e.target.result + '" alt="Image">');
+      };
+      reader.readAsDataURL(file);
+    }
+    wrapper.find(".image-uploaded-layout").removeClass("d-none");
+    wrapper.find(".image-upload-checkbox").addClass("d-none");
+  });
+  $(".image-upload-wrapper .image-uploaded-layout .btn-delete").click(function (
+    event
+  ) {
+    console.log($(this));
+    $(this)
+      .closest(".image-upload-wrapper")
+      .find(".image-uploaded-layout")
+      .addClass("d-none");
+    $(this)
+      .closest(".image-upload-wrapper")
+      .find(".image-upload-checkbox")
+      .removeClass("d-none");
+  });
+  // end image upload file 5-2-25
+
   // all functions here -------
   $(".primary-market-table-wrapper .slide-arrow").on("click", function () {
     $("html, body").toggleClass("toggle-events");

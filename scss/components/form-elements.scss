@@ -519,6 +519,15 @@ textarea.form-control {
         padding: 8px;
         margin: -8px;
     }
+
+    &.btn-gray {
+        background-color: #00000080;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    }
 }
 
 .btn.sq-btn {
@@ -1067,6 +1076,7 @@ textarea.form-control {
     .modal-header {
         padding: 15px;
         border-bottom: 1px solid #D2D5D8;
+        min-height: 56px;
 
         .modal-title {
             font-size: 20px;

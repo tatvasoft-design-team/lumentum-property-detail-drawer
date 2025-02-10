@@ -547,6 +547,22 @@ body {
     }
 }
 
+.loc-layout {
+    border-bottom: 1px solid #E3E8ED;
+    padding-bottom: 16px;
+
+    .i {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        background-color: #0056A1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 // tabbing
 .feature-tab-links {
     overflow: hidden;
@@ -674,6 +690,8 @@ body {
         margin-top: 0 !important;
 
         .nav-link {
+            display: flex;
+            align-items: center;
             font-size: 16px;
             line-height: 20px;
             padding: 10px 15px;
@@ -694,6 +712,12 @@ body {
                 font-size: 14px;
                 border-radius: 3px;
                 margin-left: 8px;
+            }
+
+            .rounded-pill {
+                width: 24px;
+                height: 24px;
+                padding: 0;
             }
 
             &.active {
@@ -778,6 +802,149 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.image-upload-checkbox {
+    position: relative;
+    padding: 0;
+
+    .form-check-input {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        left: auto;
+        border-radius: 50%;
+        background-color: #E3E8ED;
+        border: none;
+        width: 16px;
+        height: 16px;
+
+        &:checked[type=checkbox] {
+            background-size: 10px;
+        }
+
+        &:checked {
+            +.form-check-label {
+                border-width: 2px;
+                border-color: #0056A1;
+
+                .unupload-thumb {
+                    display: none;
+                }
+
+                .selected-thumb {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    flex-direction: column;
+                    padding: 14px;
+
+                    .btns {
+                        display: inline-flex;
+                        gap: 24px;
+                        margin-bottom: 36px;
+
+                        .btn {
+                            width: 34px;
+                            min-width: 34px;
+                            height: 34px;
+                            min-height: 34px;
+                            border-radius: 50%;
+                            padding: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .form-check-label {
+        cursor: pointer;
+        position: relative;
+        height: 160px;
+        border-radius: 10px;
+        border: 1px solid #E3E8ED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .unupload-thumb {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 24px;
+                height: 24px;
+                margin-bottom: 6px;
+            }
+        }
+
+        .selected-thumb {
+            display: none;
+        }
+    }
+
+    .btn-upload {
+        position: relative;
+
+        .image-upload {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+        }
+    }
+}
+
+.image-uploaded-layout {
+    height: 160px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 11px;
+
+    &::before {
+        content: '';
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        width: 100%;
+        height: 42px;
+        z-index: -1;
+    }
+
+    .btn-delete {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+    }
+
+    .thumb {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 // offcanvas drawer
