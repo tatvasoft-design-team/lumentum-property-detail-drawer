@@ -4401,7 +4401,7 @@ h5 {
   }
 }
 .property-drawer-detail .scout-without-data {
-  padding: 80px 0;
+  padding: 60px 0;
   min-height: calc(100vh - 580px);
   display: flex;
   flex-direction: column;
@@ -5513,6 +5513,42 @@ body {
 }
 .tagsmodal .card-mostused-link > ul li:not(:last-child) {
   margin-bottom: 6px;
+}
+
+.delete-modal .modal-content {
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+}
+.delete-modal .modal-content .btn-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+@media (max-width: 575.98px) {
+  .delete-modal .modal-content {
+    padding: 20px;
+  }
+}
+.delete-modal .i {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.delete-modal .tx-red {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #FF6464;
+}
+.delete-modal .modal-footer {
+  padding: 24px 0 0;
+  justify-content: center;
+}
+.delete-modal .modal-footer .btn {
+  min-width: 110px;
+}
+.delete-modal .modal-footer .btn.w-128p {
+  min-width: 128px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1140,3 +1140,46 @@ body {
         }
     }
 }
+
+.delete-modal {
+    .modal-content {
+        padding: 50px 20px;
+        text-align: center;
+        position: relative;
+
+        .btn-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+        }
+
+        @include break-points.bp (xs-max) {
+            padding: 20px;
+        }
+    }
+
+    .i {
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+
+    .tx-red {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #FF6464;
+    }
+
+    .modal-footer {
+        padding: 24px 0 0;
+        justify-content: center;
+
+        .btn {
+            min-width: 110px;
+
+            &.w-128p {
+                min-width: 128px;
+            }
+        }
+    }
+}
