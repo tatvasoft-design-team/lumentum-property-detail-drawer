@@ -9,6 +9,7 @@
 	$md-max: "(max-width: 1023.98px)";
 	$lg-max: "(max-width: 1199.98px)";
 	$xlg-max: "(max-width: 1365.98px)";
+	$xmlg-max: "(max-width: 1399.98px)";
 	$xxlg-max: "(max-width: 1439.98px)";
 	$xxxlg-max: "(max-width: 1539.98px)";
 	
@@ -35,6 +36,9 @@
 	}
 	@else if $point == xlg-max {
 		@media #{$xlg-max} { @content; }
+	}
+	@else if $point == xmlg-max {
+		@media #{$xmlg-max} { @content; }
 	}
 	@else if $point == xxlg-max {
 		@media #{$xxlg-max} { @content; }

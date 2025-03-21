@@ -497,6 +497,20 @@ $(document).ready(function () {
   });
   // end image upload file 5-2-25
 
+  // 10-03-2025
+  $(".edit-bid-box").on("click", function () {
+    if($(this).hasClass("edited")){
+    }else if($(this).hasClass("edit")) {
+      $(this).addClass("d-none");
+      $(this).siblings(".edit").addClass("d-none");
+      $(this).siblings(".edited").removeClass("d-none");
+    } else {
+      $(this).addClass("d-none");
+      $(this).siblings(".edit").removeClass("d-none");
+    }
+  });
+  // End 10-03-2025
+
   // all functions here -------
   $(".primary-market-table-wrapper .slide-arrow").on("click", function () {
     $("html, body").toggleClass("toggle-events");

@@ -623,6 +623,11 @@
 
 // Property details drawer
 // ---------------------------------------------------------------------------
+.divider {
+  border-left: 1px solid #888;
+  min-height: 15px;
+}
+
 .property-drawer-detail {
   color: #333333;
 
@@ -911,6 +916,10 @@
 
     .tab-content {
       padding: 10px;
+    }
+
+    .card-text-val {
+      min-height: 49px;
     }
 
     .card-text-val+.card-text-val {
@@ -1676,6 +1685,127 @@
         padding-bottom: 8px;
       }
     }
+  }
+}
+
+.property-drawer-detail.with-cetificate {
+  .family-residence-info {
+    align-items: flex-start;
+  }
+
+  .auction-block {
+    margin-top: -30px;
+
+    @include break-points.bp(xmlg-max) {
+      margin-top: 0;
+    }
+  }
+
+  .property-info-block {
+    @include break-points.bp(xmlg-max) {
+      height: auto;
+    }
+
+    .edit-bid-box {
+      cursor: pointer;
+      background-color: #F2F9FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #337AB7CC;
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 0;
+      border: 1px solid transparent;
+      padding: 4.5px 10px;
+
+      &.edit {
+        border-color:#337AB7;
+        display: block;
+        color: #333333;
+
+        input {
+          width: 100%;
+          color: #337AB7;
+          font-weight: 700;
+        }
+
+        .suffix {
+          color: #888888;
+        }
+      }
+
+      &.edited {
+        display: block;
+        color: #333333;
+      }
+    }
+  }
+
+  .selectedasset-custom-row {
+    &.row {
+      --bs-gutter-x: 8px;
+      --bs-gutter-y: 8px;
+
+      .card-text-val {
+        height: 100%;
+      }
+
+      @media (min-width: 992px) {
+        .col-lg {
+          width: 20%;
+          flex: 0 0 auto;
+        }
+      }
+    }
+  }
+
+  .tags-tab {
+    padding: 16px;
+
+    .bootstrap-tagsinput {
+      height: 100%;
+      align-items: flex-start;
+      align-content: baseline;
+      max-height: 228px;
+      min-height: 182px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #BCBCBC;
+        opacity: 0.4;
+        border-radius: 12px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: #b4b2b2;
+        opacity: 0.4;
+      }
+    }
+
+    .chip-list a {
+      font-weight: 500;
+      padding: 5px 10px;
+    }
+  }
+
+  .delinquent-tax-card {
+    background-color: #F4F9FF;
+  }
+
+  .confidential-block {
+    min-height: calc(100vh - 470px)
   }
 }
 

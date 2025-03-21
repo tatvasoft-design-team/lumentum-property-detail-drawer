@@ -1,0 +1,2035 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Main Page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Start Header -->
+		<header class="header">
+			<div class="backdrop"></div>
+			<div class="header-left">
+				<div class="hamburger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="index.html" class="logo" title="Lumentum">
+					<img src="images/main-logo.svg" alt="logo">
+				</a>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#" title="Dashboard" class="active">
+							<em class="i"><img src="images/dashboard-icon.svg" alt="" /></em>
+							Dashboard
+						</a>
+					</li>
+					<li>
+						<a href="#" title="DigiMap">
+							<em class="i"><img src="images/location-icon.svg" alt="" /></em>
+							DigiMap
+						</a>
+					</li>
+					<li>
+						<a href="#" title="OTC">
+							<em class="i"><img src="images/OTC-icon.svg" alt="" /></em>
+							OTC
+						</a>
+					</li>
+					<li>
+						<span class="submenu-arrow"><img src="images/dropdown-white.svg" alt="" /></span>
+						<a href="#" title="Auctions">
+							<em class="i"><img src="images/auction-icon.svg" alt="" /></em>
+							Auctions
+						</a>
+						<ul class="submenu-content">
+							<li><a href="#" title="PM Summary">PM Summary</a></li>
+							<li><a href="#" title="PM Prospects">PM Prospects</a></li>
+							<li><a href="#" title="Tax Deeds">Tax Deeds</a></li>
+							<li><a href="#" title="Foreclosures">Foreclosures</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="submenu-arrow"><img src="images/dropdown-white.svg" alt="" /></span>
+						<a href="#" title="AMP">
+							<em class="i"><img src="images/portfolio-icon.svg" alt="" /></em>
+							AMP
+						</a>
+						<ul class="submenu-content">
+							<li><a href="#" title="Asset Research">Asset Research</a></li>
+							<li><a href="#" title="Transaction Research">Transaction Research</a></li>
+							<li><a href="#" title="Reconciliation – Bank">Reconciliation – Bank</a></li>
+							<li><a href="#" title="Reconciliation - Assets">Reconciliation - Assets</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<!-- End Main Navigation -->
+
+			<ul class="user-action">
+				<li>
+					<button class="btn ic-btn">
+						<img src="images/ic-page.svg" alt="" />
+					</button>
+				</li>
+				<li>
+					<button class="btn ic-btn">
+						<img src="images/download-report-white.svg" alt="" />
+					</button>
+				</li>
+				<li>
+					<button class="btn ic-btn">
+						<div class="badge-wrapper">
+							<img src="images/notification.svg" alt="" />
+							<span class="badge">03</span>
+						</div>
+					</button>
+				</li>
+				<li>
+					<button class="btn ic-btn">
+						<div class="badge-wrapper">
+							<img src="images/ic-cart.svg" alt="" />
+							<span class="badge">03</span>
+						</div>
+					</button>
+				</li>
+				<li>
+					<div class="dropdown user-menu-box">
+						<a class="user-menu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<em><img src="images/user-image.png" alt="user"></em>
+						</a>
+						<div class="dropdown-menu no-click-close user-menu-outer dropdown-menu-lg-end">
+							<select class="custom-Select2-no-search no-parent">
+								<option value="1" selected>Sarah Watson (10171)</option>
+								<option value="2">Sarah Watson (10172)</option>
+								<option value="3">Sarah Watson (10173)</option>
+							</select>
+
+							<p class="user-name">
+								Welcome, <strong class="text-bold">Sarah!</strong>
+							</p>
+
+							<ul>
+								<li>
+									<a href="my-profile.html" title="My Profile">
+										<em class="i"><img src="./images/profile-icon.svg" alt="" /></em>
+										My Profile
+									</a>
+								</li>
+								<li>
+									<a href="access-denied.html" title="Support">
+										<em class="i"><img src="./images/support-icon.svg" alt="" /></em>
+										Support
+									</a>
+								</li>
+								<li>
+									<a href="manage-users.html" title="Settings">
+										<em class="i"><img src="./images/settings-icon.svg" alt="" /></em>
+										Settings
+									</a>
+								</li>
+								<li>
+									<a href="index.html" title="Logout">
+										<em class="i"><img src="./images/logout-icon.svg" alt="" /></em>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</header>
+		<!-- End Header -->
+
+		<!-- Main Content -->
+		<main class="main-content">
+			<button class="btn btn-primary drawer-btn" data-drawer-btn="property-drawer-detail">Open</button>
+		</main>
+		<!-- End Main Content -->
+
+
+		<!-- Property details drawer -->
+		<div class="drawer-main" data-mcs-theme="light" data-drawer-wrapper="property-drawer-detail">
+			<div class="drawer-header">
+				<!-- confidential condition here -->
+				<h5 class="drawer-title d-flex gap-2 align-items-center">Confidential Property</h5>
+				<!--<button class="ms-auto btn-outline-white sq-btn sm"><img src="./images/ic-copy.svg" alt=""></button>
+				-->
+				<div class="right-side">
+					<!-- confidential condition here -->
+					<!-- <button class="btn btn-outline-white smd tx-16px">Print</button> -->
+					<button class="btn btn-outline-white smd tx-16px" data-bs-toggle="modal"
+						data-bs-target="#marketListModal">Add to List</button>
+					<button type="button" class="btn-close drawer-close"></button>
+				</div>
+			</div>
+			<div class="drawer-body inner-scroll">
+				<div class="property-drawer-detail with-cetificate">
+					<div class="top-common-section py-2">
+						<div
+							class="family-residence-info mb-0 gap-1 justify-content-between align-items-center flex-nowrap mb-3 mb-md-0">
+							<div class="info-left w-auto pb-0">
+								<div class="info-title mb-0">
+									<!-- confidential condition here -->
+									<!-- <h6 class="fw-semibold ">Single Family Residential</h6>
+									<em class="divider"></em> -->
+									<p><span>APN :</span> 0958-06-9407</p>
+									<em class="divider"></em>
+									<p><span>Jurisdiction :</span> Jurisdiction (County)</p>
+								</div>
+								<!-- confidential condition here -->
+								<!-- <ul class="features-detail-list">
+									<li>
+										<em class="i">
+											<svg class="svg-fill-primary" width="16" height="16" viewBox="0 0 16 16"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_4645_67702)">
+													<path
+														d="M15.0609 8.1395C15.1515 7.95809 15.1998 7.75686 15.1998 7.54806C15.1998 6.81711 14.6051 6.22241 13.8742 6.22241H5.06263C4.76585 6.22241 4.48196 6.30561 4.23676 6.46032C3.98035 5.79342 3.33342 5.31867 2.5773 5.31867C2.23497 5.31867 1.9151 5.41618 1.64355 5.58454V3.0293C1.64355 2.79631 1.45467 2.60742 1.22168 2.60742C0.988692 2.60742 0.799805 2.79631 0.799805 3.0293V12.9706C0.799805 13.2035 0.988692 13.3924 1.22168 13.3924H3.02919C3.26218 13.3924 3.45106 13.2035 3.45106 12.9706V11.133H12.5486V12.9705C12.5486 13.2035 12.7375 13.3924 12.9704 13.3924H14.7779C15.0109 13.3924 15.1998 13.2035 15.1998 12.9705V8.45177C15.1998 8.32779 15.146 8.21667 15.0609 8.1395ZM1.64355 10.2893V8.87364H14.3561V10.2893H1.64355ZM9.73675 8.02989C9.66764 7.67062 9.51203 7.34198 9.29249 7.06613H11.952L10.9882 8.02989H9.73675ZM14.3561 7.54806C14.3561 7.81344 14.1412 8.02992 13.8742 8.02992H12.1814L13.1452 7.06616H13.8742C14.1399 7.06616 14.3561 7.28233 14.3561 7.54806ZM5.06263 7.06616H7.54792C8.16487 7.06616 8.68875 7.47155 8.86766 8.02992H4.3548V7.77398C4.3548 7.38181 4.67394 7.06616 5.06263 7.06616ZM2.5773 6.16242C3.09219 6.16242 3.51105 6.58131 3.51105 7.09617C3.51105 7.61106 3.09219 8.02995 2.5773 8.02995C2.06242 8.02995 1.64355 7.61103 1.64355 7.09614C1.64355 6.58129 2.06245 6.16242 2.5773 6.16242ZM2.60731 12.5487H1.64355V11.133H2.60731V12.5487ZM14.3561 12.5487H13.3923V11.133H14.3561V12.5487Z" />
+												</g>
+												<defs>
+													<clipPath id="clip0_4645_67702">
+														<rect width="14.4" height="14.4" fill="white"
+															transform="translate(0.799805 0.800781)" />
+													</clipPath>
+												</defs>
+											</svg>
+										</em>
+										<span>3 beds</span>
+									</li>
+									<li>
+										<em class="i">
+											<svg class="svg-fill-primary" width="16" height="16" viewBox="0 0 16 16"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_4645_67708)">
+													<path
+														d="M14.7779 8.48015H14.2323H4.17087V3.74041C4.17087 3.11567 4.67911 2.60742 5.30383 2.60742C5.79787 2.60742 6.21882 2.9254 6.37339 3.36739C5.6017 3.50787 5.01459 4.1845 5.01459 4.99616V5.4053C5.01459 5.63829 5.20348 5.82717 5.43646 5.82717H8.28086C8.51385 5.82717 8.70273 5.63829 8.70273 5.4053V4.99616C8.70273 4.14912 8.0634 3.44903 7.242 3.35206C7.06105 2.44742 6.26086 1.76367 5.30383 1.76367C4.21387 1.76367 3.32712 2.65043 3.32712 3.74041V8.48015H1.7673H1.22168C0.988692 8.48015 0.799805 8.66904 0.799805 8.90202C0.799805 9.13501 0.988692 9.3239 1.22168 9.3239H1.42559L1.82066 11.1856C1.96466 11.8643 2.34089 12.4786 2.87999 12.9153C2.91253 12.9416 2.9456 12.9672 2.97913 12.9921L2.62787 13.6089C2.51256 13.8113 2.58321 14.0689 2.78568 14.1842C2.85158 14.2218 2.9233 14.2396 2.99406 14.2396C3.14073 14.2396 3.28327 14.1629 3.36104 14.0264L3.72016 13.3958C4.0609 13.5243 4.42419 13.5925 4.79187 13.5925H11.2077C11.5754 13.5925 11.9387 13.5243 12.2794 13.3958L12.6386 14.0264C12.7164 14.163 12.8589 14.2396 13.0055 14.2396C13.0763 14.2396 13.148 14.2217 13.2139 14.1842C13.4164 14.0689 13.487 13.8113 13.3717 13.6089L13.0205 12.9921C13.054 12.9672 13.0871 12.9416 13.1196 12.9153C13.6587 12.4786 14.035 11.8643 14.179 11.1856L14.574 9.3239H14.7779C15.0109 9.3239 15.1998 9.13501 15.1998 8.90202C15.1998 8.66904 15.0109 8.48015 14.7779 8.48015ZM7.85887 4.98339H5.85845C5.86529 4.54138 6.22697 4.18389 6.67056 4.18389H7.04673C7.49035 4.18389 7.85204 4.54138 7.85887 4.98339ZM13.3536 11.0105C13.1398 12.0177 12.2374 12.7488 11.2077 12.7488H4.79187C3.76221 12.7488 2.85974 12.0177 2.64599 11.0105L2.2881 9.3239H13.7115L13.3536 11.0105Z" />
+													<path
+														d="M7.67874 6.41602C7.67838 6.41602 7.67807 6.41602 7.6777 6.41602C7.44471 6.41658 7.2563 6.60589 7.25684 6.8389L7.2585 7.53176C7.25906 7.76439 7.44781 7.95263 7.68034 7.95263H7.68138C7.91437 7.95206 8.10278 7.76275 8.10225 7.52974L8.10059 6.83688C8.10005 6.60423 7.91128 6.41602 7.67874 6.41602Z" />
+													<path
+														d="M6.03772 6.41602C5.80521 6.41602 5.61643 6.60423 5.61587 6.83688L5.61421 7.52974C5.61365 7.76275 5.80208 7.95209 6.03507 7.95263H6.03611C6.26862 7.95263 6.4574 7.76441 6.45796 7.53176L6.45962 6.8389C6.46018 6.60589 6.27174 6.41655 6.03876 6.41602C6.03842 6.41602 6.03808 6.41602 6.03772 6.41602Z" />
+												</g>
+												<defs>
+													<clipPath id="clip0_4645_67708">
+														<rect width="14.4" height="14.4" fill="white"
+															transform="translate(0.799805 0.800781)" />
+													</clipPath>
+												</defs>
+											</svg>
+										</em>
+										<span>2 Baths</span>
+									</li>
+									<li>
+										<em class="i">
+
+											<svg class="svg-fill-primary" width="13" height="12" viewBox="0 0 13 12"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.8258 8.14871L9.11378 5.44271C9.17053 5.16634 9.19868 4.88485 9.19778 4.60271C9.19757 3.8291 9.00234 3.06803 8.63014 2.38984C8.25794 1.71165 7.72079 1.13824 7.06832 0.722596C6.41585 0.306955 5.66913 0.0625029 4.89719 0.0118352C4.12524 -0.0388325 3.35297 0.105919 2.65178 0.432711C2.56294 0.473294 2.48535 0.53495 2.42575 0.612326C2.36615 0.689702 2.32634 0.780457 2.30978 0.876711C2.29328 0.971743 2.29993 1.06935 2.32918 1.16127C2.35842 1.25318 2.4094 1.33669 2.47778 1.40471L5.08778 4.00871L4.00778 5.08871L1.40378 2.47871C1.33518 2.41139 1.25141 2.36154 1.15952 2.33335C1.06764 2.30516 0.970326 2.29945 0.875777 2.31671C0.780126 2.33267 0.689767 2.37157 0.612441 2.43009C0.535114 2.48861 0.473123 2.56499 0.431777 2.65271C0.103892 3.35621 -0.0407346 4.13122 0.0113517 4.90563C0.0634379 5.68004 0.310544 6.4287 0.729684 7.08196C1.14882 7.73522 1.72638 8.27185 2.40862 8.64195C3.09087 9.01204 3.85563 9.20357 4.63178 9.19871C4.91392 9.19962 5.1954 9.17147 5.47178 9.11471L8.17778 11.8267C8.23355 11.8829 8.29991 11.9276 8.37303 11.958C8.44615 11.9885 8.52457 12.0042 8.60378 12.0042C8.68298 12.0042 8.76141 11.9885 8.83452 11.958C8.90764 11.9276 8.974 11.8829 9.02978 11.8267C9.08601 11.7709 9.13065 11.7046 9.16111 11.6315C9.19157 11.5583 9.20726 11.4799 9.20726 11.4007C9.20726 11.3215 9.19157 11.2431 9.16111 11.17C9.13065 11.0969 9.08601 11.0305 9.02978 10.9747L6.08978 8.03471C6.01631 7.96173 5.9252 7.90901 5.82531 7.88167C5.72543 7.85433 5.62017 7.85331 5.51978 7.87871C5.23008 7.95629 4.93167 7.99662 4.63178 7.99871C4.18301 8.00267 3.73789 7.9178 3.32206 7.74898C2.90623 7.58016 2.52792 7.33073 2.20891 7.01507C1.8899 6.69941 1.6365 6.32374 1.46331 5.90972C1.29011 5.4957 1.20055 5.0515 1.19978 4.60271C1.199 4.40172 1.21506 4.20102 1.24778 4.00271L3.59978 6.36071C3.65555 6.41695 3.72191 6.46159 3.79503 6.49205C3.86815 6.52251 3.94657 6.53819 4.02578 6.53819C4.10498 6.53819 4.18341 6.52251 4.25652 6.49205C4.32964 6.46159 4.396 6.41695 4.45178 6.36071L6.35978 4.43471C6.46792 4.32283 6.52837 4.17331 6.52837 4.01771C6.52837 3.86211 6.46792 3.71259 6.35978 3.60071L4.02578 1.24871C4.22413 1.21632 4.4248 1.20026 4.62578 1.20071C5.527 1.2023 6.39077 1.56143 7.02748 2.19925C7.66418 2.83708 8.02178 3.70148 8.02178 4.60271C8.01968 4.90261 7.97936 5.20101 7.90178 5.49071C7.87638 5.59111 7.8774 5.69637 7.90473 5.79625C7.93207 5.89613 7.98479 5.98724 8.05778 6.06071L10.9978 9.00071C11.1108 9.11369 11.264 9.17717 11.4238 9.17717C11.5836 9.17717 11.7368 9.11369 11.8498 9.00071C11.9628 8.88773 12.0262 8.73449 12.0262 8.57471C12.0262 8.41493 11.9628 8.26169 11.8498 8.14871H11.8258Z" />
+											</svg>
+										</em>
+										<span>Built in 2001</span>
+									</li>
+									<li>
+										<em class="i">
+											<svg class="svg-fill-primary" width="12" height="12" viewBox="0 0 12 12"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M4.55426 6.93791L1.73293 9.76458V8.91658C1.73293 8.77513 1.67674 8.63948 1.57672 8.53946C1.4767 8.43944 1.34104 8.38325 1.19959 8.38325C1.05814 8.38325 0.922489 8.43944 0.822469 8.53946C0.72245 8.63948 0.66626 8.77513 0.66626 8.91658L0.66626 11.0499C0.667102 11.1196 0.681598 11.1885 0.708926 11.2526C0.763046 11.3829 0.866607 11.4865 0.996926 11.5406C1.06104 11.5679 1.1299 11.5824 1.19959 11.5832H3.33293C3.47438 11.5832 3.61003 11.5271 3.71005 11.427C3.81007 11.327 3.86626 11.1914 3.86626 11.0499C3.86626 10.9085 3.81007 10.7728 3.71005 10.6728C3.61003 10.5728 3.47438 10.5166 3.33293 10.5166H2.48493L5.31159 7.69525C5.41202 7.59482 5.46844 7.45861 5.46844 7.31658C5.46844 7.17455 5.41202 7.03834 5.31159 6.93791C5.21116 6.83748 5.07495 6.78106 4.93293 6.78106C4.7909 6.78106 4.65469 6.83748 4.55426 6.93791ZM11.2903 1.24725C11.2361 1.11693 11.1326 1.01337 11.0023 0.959247C10.9381 0.931918 10.8693 0.917423 10.7996 0.91658L8.66626 0.91658C8.52481 0.91658 8.38915 0.97277 8.28914 1.07279C8.18912 1.17281 8.13293 1.30846 8.13293 1.44991C8.13293 1.59136 8.18912 1.72702 8.28914 1.82704C8.38915 1.92706 8.52481 1.98325 8.66626 1.98325H9.51426L6.68759 4.80458C6.6376 4.85416 6.59793 4.91315 6.57085 4.97814C6.54377 5.04313 6.52983 5.11284 6.52983 5.18325C6.52983 5.25365 6.54377 5.32336 6.57085 5.38835C6.59793 5.45335 6.6376 5.51233 6.68759 5.56191C6.73717 5.6119 6.79616 5.65158 6.86115 5.67866C6.92614 5.70573 6.99585 5.71967 7.06626 5.71967C7.13667 5.71967 7.20638 5.70573 7.27137 5.67866C7.33636 5.65158 7.39535 5.6119 7.44493 5.56191L10.2663 2.73525V3.58325C10.2663 3.7247 10.3224 3.86035 10.4225 3.96037C10.5225 4.06039 10.6581 4.11658 10.7996 4.11658C10.941 4.11658 11.0767 4.06039 11.1767 3.96037C11.2767 3.86035 11.3329 3.7247 11.3329 3.58325V1.44991C11.3321 1.38022 11.3176 1.31137 11.2903 1.24725Z" />
+											</svg>
+										</em>
+										<span>1699 Sq ft</span>
+									</li>
+									<li>
+										<em class="i">
+											<svg class="svg-fill-primary" width="16" height="16" viewBox="0 0 16 16"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M6.49141 7.71419L2.49768 7.71796L3.0973 7.11833C3.19732 7.01831 3.25351 6.88266 3.25351 6.74121C3.25351 6.59976 3.19732 6.4641 3.0973 6.36408C2.99728 6.26406 2.86163 6.20787 2.72018 6.20787C2.57873 6.20787 2.44307 6.26406 2.34305 6.36408L0.83456 7.87258C0.785874 7.92246 0.747438 7.98139 0.721424 8.04605C0.667542 8.17647 0.667542 8.32293 0.721423 8.45335C0.747437 8.51801 0.785875 8.57695 0.83456 8.62682L2.34305 10.1353C2.44307 10.2353 2.57873 10.2915 2.72018 10.2915C2.86163 10.2915 2.99728 10.2353 3.0973 10.1353C3.19732 10.0353 3.25351 9.89964 3.25351 9.7582C3.25351 9.61675 3.19732 9.48109 3.0973 9.38107L2.49768 8.78145L6.49141 8.78522C6.63344 8.78522 6.76965 8.7288 6.87008 8.62837C6.97051 8.52794 7.02693 8.39173 7.02693 8.2497C7.02693 8.10767 6.97051 7.97146 6.87008 7.87103C6.76965 7.77061 6.63344 7.71419 6.49141 7.71419ZM8.53165 2.74747L9.13128 3.34709C9.2313 3.44711 9.36695 3.5033 9.5084 3.5033C9.64985 3.5033 9.78551 3.44711 9.88553 3.34709C9.98555 3.24708 10.0417 3.11142 10.0417 2.96997C10.0417 2.82852 9.98555 2.69287 9.88553 2.59285L8.37703 1.08435C8.32715 1.03567 8.26822 0.997231 8.20356 0.971216C8.07314 0.917335 7.92668 0.917335 7.79626 0.971216C7.7316 0.997231 7.67266 1.03567 7.62278 1.08435L6.11429 2.59285C6.01427 2.69287 5.95808 2.82852 5.95808 2.96997C5.95808 3.11142 6.01427 3.24708 6.11429 3.34709C6.21431 3.44711 6.34997 3.5033 6.49141 3.5033C6.63286 3.5033 6.76852 3.44711 6.86854 3.34709L7.46816 2.74747L7.46439 6.74121C7.4641 6.81161 7.47776 6.88138 7.50457 6.94648C7.53138 7.01158 7.57081 7.07073 7.6206 7.12052C7.67038 7.1703 7.72953 7.20974 7.79463 7.23655C7.85974 7.26336 7.9295 7.27701 7.99991 7.27672C8.07031 7.27701 8.14008 7.26336 8.20518 7.23655C8.27028 7.20974 8.32943 7.1703 8.37922 7.12052C8.429 7.07073 8.46844 7.01158 8.49525 6.94648C8.52206 6.88138 8.53571 6.81161 8.53542 6.74121L8.53165 2.74747ZM9.88553 13.1523C9.78551 13.0523 9.64985 12.9961 9.5084 12.9961C9.36695 12.9961 9.2313 13.0523 9.13128 13.1523L8.53165 13.7519L8.53542 9.7582C8.53542 9.61617 8.479 9.47996 8.37857 9.37953C8.27815 9.2791 8.14194 9.22268 7.99991 9.22268C7.85788 9.22268 7.72167 9.2791 7.62124 9.37953C7.52081 9.47996 7.46439 9.61617 7.46439 9.7582L7.46816 13.7519L6.86854 13.1523C6.76852 13.0523 6.63286 12.9961 6.49141 12.9961C6.34997 12.9961 6.21431 13.0523 6.11429 13.1523C6.01427 13.2523 5.95808 13.388 5.95808 13.5294C5.95808 13.6709 6.01427 13.8065 6.11429 13.9066L7.62279 15.415C7.67266 15.4637 7.7316 15.5022 7.79626 15.5282C7.92668 15.5821 8.07314 15.5821 8.20356 15.5282C8.26822 15.5022 8.32715 15.4637 8.37703 15.415L9.88553 13.9066C9.98555 13.8065 10.0417 13.6709 10.0417 13.5294C10.0417 13.388 9.98555 13.2523 9.88553 13.1523ZM15.2784 8.45335C15.3323 8.32293 15.3323 8.17647 15.2784 8.04605C15.2524 7.98139 15.2139 7.92246 15.1653 7.87258L13.6568 6.36408C13.5567 6.26406 13.4211 6.20787 13.2796 6.20787C13.1382 6.20787 13.0025 6.26406 12.9025 6.36408C12.8025 6.4641 12.7463 6.59976 12.7463 6.74121C12.7463 6.88266 12.8025 7.01831 12.9025 7.11833L13.5021 7.71796L9.5084 7.71419C9.438 7.7139 9.36823 7.72755 9.30313 7.75436C9.23803 7.78117 9.17888 7.82061 9.12909 7.87039C9.07931 7.92018 9.03987 7.97933 9.01306 8.04443C8.98625 8.10953 8.9726 8.1793 8.97289 8.2497C8.9726 8.32011 8.98625 8.38987 9.01306 8.45498C9.03987 8.52008 9.07931 8.57923 9.12909 8.62901C9.17888 8.6788 9.23803 8.71823 9.30313 8.74504C9.36823 8.77185 9.438 8.78551 9.5084 8.78522L13.5021 8.78145L12.9025 9.38107C12.8025 9.48109 12.7463 9.61675 12.7463 9.7582C12.7463 9.89964 12.8025 10.0353 12.9025 10.1353C13.0025 10.2353 13.1382 10.2915 13.2796 10.2915C13.4211 10.2915 13.5567 10.2353 13.6568 10.1353L15.1653 8.62682C15.2139 8.57695 15.2524 8.51801 15.2784 8.45335Z" />
+											</svg>
+										</em>
+										<span>10,000 Sq ft lot size</span>
+									</li>
+								</ul> -->
+							</div>
+							<div class="drawer-action-btn">
+								<button class="btn sq-btn">
+									<svg class="svg-fill-primary" width="8" height="14" viewBox="0 0 8 14" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.66667 13.6667L0 7.00004L6.66667 0.333374L7.85 1.51671L2.36667 7.00004L7.85 12.4834L6.66667 13.6667Z" />
+									</svg>
+								</button>
+								<button class="btn sq-btn">
+									<svg class="svg-fill-primary" width="16" height="16" viewBox="0 0 16 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_348_3140" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+											x="0" y="0" width="16" height="16">
+											<rect width="16" height="16" transform="matrix(-1 0 0 1 16 0)"
+												fill="#D9D9D9" />
+										</mask>
+										<g mask="url(#mask0_348_3140)">
+											<path
+												d="M5.33333 14.6665L12 7.9998L5.33333 1.33313L4.15 2.51646L9.63333 7.9998L4.15 13.4831L5.33333 14.6665Z" />
+										</g>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="d-flex align-items-top justify-content-between gap-2">
+							<div class="dropdown dropdown-tooltip d-inline-block">
+								<button class="btn ic-btn">
+									<img src="./images/ic-lock-shield.svg" alt="" />
+								</button>
+								<div class="dropdown-menu w-255p text-sm no-click-close dropdown-menu-end">
+									<p class=" text-gray04 text-12">When a property is marked as <strong
+											class="fw-semibold">"confidential"</strong>, it means that certain details
+										about the property and/or its owner have been legally exempted from public
+										disclosure due to privacy and safety reasons.</p>
+								</div>
+							</div>
+							<div class="d-flex flex-wrap gap-2 align-self-center">
+								<div class="input-val d-flex text-13">
+									<label class="mb-0">Distress Status : </label> &nbsp;
+									<p>Bankruptcy</p>
+								</div>
+								<em class="divider"></em>
+								<div class="input-val d-flex text-13">
+									<label class="mb-0">Auction Date : </label> &nbsp;
+									<p>03/04/2025</p>
+								</div>
+								<em class="divider"></em>
+								<div class="input-val d-flex text-13">
+									<label class="mb-0">Auction Provider : </label> &nbsp;
+									<p>Real Auction</p>
+								</div>
+							</div>
+						</div>
+						<!-- confidential condition here -->
+						<!-- <div class="row space-16">
+							<div class="col-12 col-xl-6">
+								<div class="property-value-box box-height-full">
+									<div class="img-thumb" data-bs-toggle="modal"
+										data-bs-target="#property-image-modal">
+										<img src="./images/image-thumb-main-5.png" alt="property">
+										<span class="propery-badge">+49</span>
+									</div>
+									<ul class="property-list-box">
+										<li>
+											<div class="listing-part">
+												<span class="property-name-label">MLS Status :</span>
+												<p class="property-name-value">Off Market</p>
+											</div>
+											<div class="listing-part">
+												<span class="property-name-label">Purchase Method :</span>
+												<p class="property-name-value">Financed</p>
+											</div>
+										</li>
+										<li>
+											<div class="listing-part">
+												<span class="property-name-label">Distressed :</span>
+												<p class="property-name-value">Pre-Forclosure</p>
+											</div>
+											<div class="listing-part">
+												<span class="property-name-label">Occupancy :</span>
+												<p class="property-name-value">Occupied</p>
+											</div>
+										</li>
+										<li>
+											<div class="listing-part">
+												<span class="property-name-label">Flood Zone :</span>
+												<p class="property-name-value">Yes</p>
+											</div>
+											<div class="listing-part">
+												<span class="property-name-label">Owner Status :</span>
+												<p class="property-name-value">Owner Occupied</p>
+											</div>
+										</li>
+										<li>
+											<div class="listing-part">
+												<span class="property-name-label">Flood Zone Type :</span>
+												<p class="property-name-value">ABL12</p>
+											</div>
+											<div class="listing-part">
+												<span class="property-name-label">Owner Type :</span>
+												<p class="property-name-value">Individual</p>
+											</div>
+										</li>
+										<li>
+											<div class="listing-part">
+												<span class="property-name-label">Tax Amount :</span>
+												<p class="property-name-value">$123.15</p>
+											</div>
+											<div class="listing-part">
+												<span class="property-name-label">Ownership Length :</span>
+												<p class="property-name-value">4 Years 6 Months</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12 col-xl-6">
+								<div class="property-info-block scrollable-tab-wrapper">
+									<div class="feature-tab-links has-arrows">
+										<button class="arrow-link prev-link disable"><img
+												src="./images/calendar-previous.svg" alt="Left arrow"></button>
+										<button class="arrow-link next-link"><img src="./images/calendar-next.svg"
+												alt="Right arrow"></button>
+										<ul class="nav nav-tabs primary-tab" id="featureTab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<button class="nav-link active" id="SelectedLien-tab"
+													data-bs-toggle="tab" data-bs-target="#SelectedLien" type="button"
+													role="tab" aria-controls="Selected-Lien"
+													aria-selected="true">Selected Lien</button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="value-tab" data-bs-toggle="tab"
+													data-bs-target="#value" type="button" role="tab"
+													aria-controls="value" aria-selected="true">Value / Debt</button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="opportunity-tab" data-bs-toggle="tab"
+													data-bs-target="#opportunity" type="button" role="tab"
+													aria-controls="opportunity"
+													aria-selected="false">Opportunity</button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="comparables-tab" data-bs-toggle="tab"
+													data-bs-target="#comparables" type="button" role="tab"
+													aria-controls="comparables"
+													aria-selected="false">Comparables</button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="Owner-tab" data-bs-toggle="tab"
+													data-bs-target="#Owner" type="button" role="tab"
+													aria-controls="Owner" aria-selected="false">Owner</button>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content">
+										<div class="tab-pane fade show active" id="SelectedLien" role="tabpanel"
+											aria-labelledby="SelectedLien-tab">
+											<div class="row lien-custom-row">
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="card-text-val">
+														<p>$152,41</p>
+														<span>Face Value</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="card-text-val">
+														<p>2022</p>
+														<span>Delinquent Year</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="card-text-val">
+														<p>SD25566SFF</p>
+														<span>Advt. Number</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="card-text-val">
+														<p>05/02/2023</p>
+														<span>Auction Date</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="card-text-val">
+														<p>Water Lien</p>
+														<span>Lien Type</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="card-text-val">
+														<p>Yes</p>
+														<span>In BK</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="card-text-val">
+														<p>--</p>
+														<span>Batch Number</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="card-text-val">
+														<p>Jenny Wilson</p>
+														<span>Auction Provider</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade show" id="value" role="tabpanel"
+											aria-labelledby="value-tab">
+											<div class="row space-8">
+												<div class="col-12 col-sm-6">
+													<div class="card-text-val">
+														<p>$415,256</p>
+														<span>Estimated Market Value</span>
+													</div>
+													<div class="card-text-val">
+														<p>$415,256</p>
+														<span>Last Sale (04/05/2022)</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6">
+													<div class="card-text-val">
+														<p>$365,000</p>
+														<span>Assessed Value</span>
+													</div>
+													<div class="card-text-val">
+														<p>$319,986</p>
+														<span>Est. Mortgage Balance (1 Open)</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="opportunity" role="tabpanel"
+											aria-labelledby="opportunity-tab">
+											<div class="row space-8">
+												<div class="col-12 col-sm-6">
+													<div class="card-text-val">
+														<p>$415,416</p>
+														<span>Est. Equity</span>
+													</div>
+													<div class="card-text-val">
+														<p>0</p>
+														<span>Linked Properties</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6">
+													<div class="card-text-val">
+														<p>$2,680</p>
+														<span>Monthly Rent</span>
+													</div>
+													<div class="card-text-val">
+														<p>7.75%</p>
+														<span>Gross Yield</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="comparables" role="tabpanel"
+											aria-labelledby="comparables-tab">
+											<div class="row space-8">
+												<div class="col-12 col-sm-6">
+													<div class="card-text-val">
+														<p>18</p>
+														<span>Properties</span>
+													</div>
+													<div class="card-text-val">
+														<p>$415,256</p>
+														<span>Avg. Sale Price</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6">
+													<div class="card-text-val">
+														<p>46</p>
+														<span>Days on Market</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="Owner" role="tabpanel"
+											aria-labelledby="Owner-tab">
+											<div class="row space-8">
+												<div class="col-12 col-sm-6">
+													<div class="card-text-val">
+														<p>John Doe, Jane William</p>
+														<span>Owners</span>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6">
+													<div class="card-text-val">
+														<p>833 Atmore Ave North Port FL, 34287</p>
+														<span>Mailing Address</span>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+					<div class="scrollable-tab-wrapper main-property-tabs">
+						<div class="feature-tab-links property-tabs h-52 has-arrows">
+							<button class="arrow-link prev-link disable"><img src="./images/calendar-previous.svg"
+									alt="Left arrow"></button>
+							<button class="arrow-link next-link"><img src="./images/calendar-next.svg"
+									alt="Right arrow"></button>
+							<ul class="nav nav-tabs primary-tab" id="featureTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button class="nav-link active" id="Property-Details-tab" data-bs-toggle="tab"
+										data-bs-target="#Property-Details-pane" type="button" role="tab"
+										aria-controls="Property-Details-pane" aria-selected="true">Property
+										Details</button>
+								</li>
+								<!-- confidential condition here -->
+								<!-- <li class="nav-item" role="presentation">
+									<button class="nav-link" id="Map-tab" data-bs-toggle="tab"
+										data-bs-target="#Map-pane" type="button" role="tab" aria-controls="Map-pan"
+										aria-selected="false">Map</button>
+								</li> -->
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="Scout-Info-tab" data-bs-toggle="tab"
+										data-bs-target="#Scout-Info-pane" type="button" role="tab"
+										aria-controls="Scout-Info-pane" aria-selected="false">Scout Info</button>
+								</li>
+								<!-- confidential condition here -->
+								<!-- <li class="nav-item" role="presentation">
+									<button class="nav-link" id="Tax-Info-tab" data-bs-toggle="tab"
+										data-bs-target="#Tax-Info-pane" type="button" role="tab"
+										aria-controls="Tax-Info-pane" aria-selected="false">Tax Info
+										<span class="tab-count">7/7</span>
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="Mortgage-Info-tab" data-bs-toggle="tab"
+										data-bs-target="#Mortgage-Info-pane" type="button" role="tab"
+										aria-controls="Mortgage-Info-pane" aria-selected="false">Mortgage Info</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="MLS-Details-tab" data-bs-toggle="tab"
+										data-bs-target="#MLS-Details-pane" type="button" role="tab"
+										aria-controls="MLS-Details-pane" aria-selected="false">MLS Details</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="Sale-History-tab" data-bs-toggle="tab"
+										data-bs-target="#Sale-History-pane" type="button" role="tab"
+										aria-controls="Sale-History-pane" aria-selected="false">Sale History</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="Linked-Properties-tab" data-bs-toggle="tab"
+										data-bs-target="#Linked-Properties-pane" type="button" role="tab"
+										aria-controls="Linked-Properties-pane" aria-selected="false">Linked
+										Properties</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="Comparables-Listings-tab" data-bs-toggle="tab"
+										data-bs-target="#Comparables-Listings-pane" type="button" role="tab"
+										aria-controls="Comparables-Listings-pane" aria-selected="false">Comparables &
+										Near by Listings</button>
+								</li> -->
+							</ul>
+						</div>
+						<div class="tab-content p-24p">
+							<div class="tab-pane fade show active" id="Property-Details-pane" role="tabpanel"
+								aria-labelledby="Property-Details-tab">
+								<div class="row space-16 property-details-row">
+									<div class="left-col">
+										<div class="outline-card delinquent-tax-card">
+											<h6
+												class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+												Delinquent Tax Advertised for Auction (2025)
+												<span
+													class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em
+														class="d-flex"><img src="./images/period-black.svg"
+															alt="" /></em> Last updated 20/11/2023</span>
+											</h6>
+
+											<div class="table-responsive">
+												<table class="table sm-table mb-0">
+													<thead>
+														<tr>
+															<th>Auction</th>
+															<th>Delinquent</th>
+															<th>Lien Type</th>
+															<th>Adv Number</th>
+															<th>Batch</th>
+															<th>Owner</th>
+															<th>Face</th>
+															<th width="100" style="min-width: 100px;">Bid Rate</th>
+															<th width="100" style="min-width: 100px;">Overbid</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>2025</td>
+															<td>2024</td>
+															<td>Water Lien</td>
+															<td>--</td>
+															<td>--</td>
+															<td>1103 ISLAND LLC</td>
+															<td>$184.18</td>
+															<td><input class="form-control h-44 text-sm" type="text"
+																	value="$184.18"></td>
+															<td><input class="form-control h-44 text-sm" type="text"
+																	value="$184.18"></td>
+														</tr>
+														<tr>
+															<td>2025</td>
+															<td>2024</td>
+															<td>Water Lien</td>
+															<td>--</td>
+															<td>--</td>
+															<td>1103 ISLAND LLC</td>
+															<td>$184.18</td>
+															<td><input class="form-control h-44 text-sm" type="text"
+																	value="$184.18"></td>
+															<td><input class="form-control h-44 text-sm" type="text"
+																	value="$184.18"></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="confidential-block text-center">
+											<em class="d-inline-flex mb-12">
+												<img src="./images/ic-confidential-page.svg" alt="" />
+											</em>
+											<p class="text-primary fw-semibold mb-10">The information for this parcel is
+												confidential.</p>
+											<p class="text-sm text-gray05">Use the Property Appraiser link to verify the
+												accuracy of the results.</p>
+										</div>
+										<!-- confidential condition here -->
+										<!-- <div class="outline-card">
+											<h6 class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">Property Size & Value 
+												<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Lot Sq Ft</label>
+														<p>2,139</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Lot Acres</label>
+														<p>3,122</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Lot Depth</label>
+														<p>2 ft</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Lot Width</label>
+														<p>2 ft</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Living Area</label>
+														<p>1,139 Sqft</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Garage Area</label>
+														<p>639 Sqft</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Building Area</label>
+														<p>1,139 Sqft</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>PPSF</label>
+														<p>2</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Assessed Building Value</label>
+														<p>120,000</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Assessed Land Value</label>
+														<p>80,000</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Total Assessed Value</label>
+														<p>200,000</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Assessment Year</label>
+														<p>2023</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Market Improvement Value</label>
+														<p>130,000</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Market Land Value</label>
+														<p>90,000</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Market Total Value</label>
+														<p>220,000</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="outline-card">
+											<h6 class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">Structure Info 
+												<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Total Rooms</label>
+														<p>3</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Bedrooms</label>
+														<p>2</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Full Bathrooms</label>
+														<p>2</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Half Bathrooms</label>
+														<p>1</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Construction Type</label>
+														<p>Building</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Number of Stories</label>
+														<p>12</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Number of Buildings</label>
+														<p>1</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Number of Residential Units</label>
+														<p>1</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Garage Type</label>
+														<p>Attached Garage</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Car Port</label>
+														<p>Yes</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>RV Parking</label>
+														<p>Yes</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Parking Spaces</label>
+														<p>2</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Fire place</label>
+														<p>No</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Air Conditioning Type</label>
+														<p>Average</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Heating Type</label>
+														<p>Forced Air</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Heating Fuel Type</label>
+														<p>Gas</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Patio</label>
+														<p>Yes</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Patio Area</label>
+														<p>220 sqft</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Pool Area</label>
+														<p>1,023 sqft</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Pool Type</label>
+														<p>Pool - Open</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Deck</label>
+														<p>Yes</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Safety FireSprinklers</label>
+														<p>Yes</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Interior Wall Type</label>
+														<p>Stucco</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Year Built</label>
+														<p>2020</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="outline-card">
+											<h6 class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">Land/Location Info
+												<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Property State</label>
+														<p>FL</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Property City</label>
+														<p>Sebastian</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Property Zip</label>
+														<p>32958</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Jurisdiction</label>
+														<p>Miami Dade</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Latitude</label>
+														<p>37.7749</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Longitude</label>
+														<p>-122.4194</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>County Land Use Code</label>
+														<p>100</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Environmental Impact</label>
+														<p>Without Issues</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Property Class</label>
+														<p>RESIDENTIAL</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Property Type</label>
+														<p>Single Family Residential</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Land Use</label>
+														<p>RESIDENTIAL</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Is Public Land</label>
+														<p>Yes</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Zoning Category</label>
+														<p>RSF2</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Zoning Sub Category</label>
+														<p>Single Family Residential</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Zoning</label>
+														<p>RSF2</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Zoning Use Code</label>
+														<p>80</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Is Multi Parcels</label>
+														<p>No</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>New Parcel</label>
+														<p>No</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Re-Parceled</label>
+														<p>Yes</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Re-Parceled Year</label>
+														<p>2022</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>CDD</label>
+														<p>No</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>School District</label>
+														<p>Sarasota country school district</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Census Tract</label>
+														<p>050101</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Opportunity Zone</label>
+														<p>Yes</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="outline-card">
+											<h6 class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">Land Legal Designation
+												<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>APN (Unformatted)</label>
+														<p>0973170525</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Parcel Number (Assessor)</label>
+														<p>00-00-00-0360-0000-095a</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Parcel Number (Tax Collector)</label>
+														<p>00-00-00-0360-0000-095a</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Parcel Number (Alternate)</label>
+														<p>00-00-00-0360-0000-095a</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Township/Lot</label>
+														<p>02n</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Section/Block</label>
+														<p>30</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Range/Qualifier</label>
+														<p>05e</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>District</label>
+														<p>01</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Municipality</label>
+														<p>Alexandria Township</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Municipality Code</label>
+														<p>1001</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Legal Address</label>
+														<p>8333 ATMORE AVE NORTH PORT, FL. 23568</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Subdivision</label>
+														<p>Fox Run</p>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="input-val">
+														<label>Legal Description</label>
+														<p>LOT 25 BLK 1705 36TH ADD TO PORT CHARLOTTE</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="outline-card">
+											<h6 class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">Owner Info
+												<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Owner 1 Name</label>
+														<p>BARNES KATHY A</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Owner 2 Name</label>
+														<p>BARNES KATHY A</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Complex Owner</label>
+														<p>BARNES KATHY A</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Owner Change</label>
+														<p>KATHY BARNES</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Is Vacant</label>
+														<p>No</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Absentee Owner</label>
+														<p>BARNES KATHY A</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>In State Absentee Owner</label>
+														<p>Yes</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Out of State Absentee Owner</label>
+														<p>KATHY BARNES</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Home Exemption</label>
+														<p>--</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Mailing City</label>
+														<p>Sebastian</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Mailing State</label>
+														<p>FL</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Mailing Zip</label>
+														<p>23568</p>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="input-val">
+														<label>Mailing Address</label>
+														<p>8333 ATMORE AVE NORTH PORT, FL. 23568</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="outline-card mb-0">
+											<h6 class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">Additional Liens
+												<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Lien</label>
+														<p>1</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Lis Pendens</label>
+														<p>2</p>
+													</div>
+												</div>
+											</div>
+										</div> -->
+									</div>
+									<div class="right-col">
+										<div class="outline-card p-0 mb-0 h-100">
+											<div class="feature-tab-links h-52 has-arrows">
+												<button class="arrow-link prev-link disable"><img
+														src="./images/calendar-previous.svg" alt="Left arrow"></button>
+												<button class="arrow-link next-link"><img
+														src="./images/calendar-next.svg" alt="Right arrow"></button>
+												<ul class="nav nav-tabs primary-tab bg-white pb-0" id="propertyOuterTab"
+													role="tablist">
+													<li class="nav-item" role="presentation">
+														<button class="nav-link active" id="info-tab"
+															data-bs-toggle="tab" data-bs-target="#info" type="button"
+															role="tab" aria-controls="info"
+															aria-selected="true">Info</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" id="Tags-tab" data-bs-toggle="tab"
+															data-bs-target="#Tags" type="button" role="tab"
+															aria-controls="Tags" aria-selected="false">Tags</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" id="notes-tab" data-bs-toggle="tab"
+															data-bs-target="#notes" type="button" role="tab"
+															aria-controls="notes" aria-selected="false">Notes</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" id="parcel-tab" data-bs-toggle="tab"
+															data-bs-target="#parcel" type="button" role="tab"
+															aria-controls="parcel"
+															aria-selected="false">Attachments</button>
+													</li>
+												</ul>
+											</div>
+											<div class="tab-content p-0" id="propertyOuterTab">
+												<div class="tab-pane fade show active" id="info" role="tabpanel"
+													aria-labelledby="info-tab">
+													<div class="links-block">
+														<h6 class="fw-bold mb-12 text-gray05">Link Outs</h6>
+														<ul>
+															<li>
+																<a href="#">
+																	<em class="link-icon ic-explore"></em><span>Property
+																		Appraiser/Assessor</span> <em
+																		class="ic-link"></em></a>
+															</li>
+															<li>
+																<a href="#">
+																	<em class="link-icon ic-explore"></em><span>Tax
+																		Collector/Treasure</span><em
+																		class="ic-link"></em></a>
+															</li>
+															<li>
+																<a href="#">
+																	<em class="link-icon ic-explore"></em><span>Google
+																		Maps</span><em class="ic-link"></em></a>
+															</li>
+															<li>
+																<a href="#">
+																	<em class="link-icon ic-explore"></em><span>Google
+																		Earths</span><em class="ic-link"></em></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="tab-pane fade notes-block" id="notes" role="tabpanel"
+													aria-labelledby="notes-tab">
+													<div class="notes-message">
+														<textarea class="form-control"
+															placeholder="Type your note here..."></textarea>
+														<div class="notes-btn">
+															<button type="button"
+																class="btn btn-primary smd ">Save</button>
+														</div>
+													</div>
+													<ul class="notes-received">
+														<li>
+															<div class="received-header">
+																<div class="rh-left">
+																	<em class="receiver-name">S</em>
+																	<h6>System</h6>
+																</div>
+																<span class="received-date">30/07/2020 11:00 AM</span>
+															</div>
+															<div class="received-body">
+																<p>Lorem ipsum dolor sit amet consectetur. Mauris et
+																	dignissim aliquam elementum habitasse volutpat.
+																	Viverra
+																	nulla massa odio amet arcu enim lectus tristique.
+																</p>
+															</div>
+														</li>
+														<li>
+															<div class="received-header">
+																<div class="rh-left">
+																	<em class="receiver-name">S</em>
+																	<h6>System</h6>
+																</div>
+																<span class="received-date">28/06/2020 08:00 AM</span>
+															</div>
+															<div class="received-body">
+																<p>Lorem ipsum dolor sit amet consectetur. Mauris et
+																	dignissim aliquam elementum habitasse volutpat.
+																	Viverra
+																	nulla massa odio amet arcu enim lectus tristique.
+																</p>
+															</div>
+														</li>
+														<li>
+															<div class="received-header">
+																<div class="rh-left">
+																	<em class="receiver-name">S</em>
+																	<h6>System</h6>
+																</div>
+																<span class="received-date">19/07/2020 10:00 AM</span>
+															</div>
+															<div class="received-body">
+																<p>Lorem ipsum dolor sit amet consectetur. Mauris et
+																	dignissim aliquam elementum habitasse volutpat.
+																	Viverra nulla massa odio amet arcu enim lectus
+																	tristique. habitasse volutpat. Viverra nulla massa
+																	odio amet arcu enim lectus tristique.
+																</p>
+															</div>
+														</li>
+														<li>
+															<div class="received-header">
+																<div class="rh-left">
+																	<em class="receiver-name">S</em>
+																	<h6>System</h6>
+																</div>
+																<span class="received-date">07/05/2016 02:00 PM</span>
+															</div>
+															<div class="received-body">
+																<p>Lorem ipsum dolor sit amet consectetur. Mauris et
+																	dignissim aliquam elementum habitasse volutpat.
+																	Viverra nulla massa odio amet arcu enim lectus
+																	tristique. Lorem ipsum dolor sit amet consectetur.
+																	Mauris et dignissim aliquam elementum habitasse
+																	volutpat.
+																</p>
+															</div>
+														</li>
+														<li>
+															<div class="received-header">
+																<div class="rh-left">
+																	<em class="receiver-name">S</em>
+																	<h6>System</h6>
+																</div>
+																<span class="received-date">16/06/2020 05:30 PM</span>
+															</div>
+															<div class="received-body">
+																<p>Lorem ipsum dolor sit amet consectetur. Mauris et
+																	dignissim aliquam elementum habitasse volutpat.
+																	Viverra nulla massa odio amet arcu enim lectus
+																	tristique. Lorem ipsum dolor sit amet consectetur.
+																	Mauris et dignissim aliquam elementum habitasse
+																	volutpat.
+																</p>
+															</div>
+														</li>
+													</ul>
+													<div class="c-pagination center">
+														<a class="page-link arrow disabled" href="#"
+															aria-label="Previous">
+															<img src="./images/calendar-previous.svg" alt="" />
+														</a>
+														<a class="page-link arrow disabled" href="#"
+															aria-label="Previous">
+															<img src="./images/pagination-previous.svg" alt="" />
+														</a>
+														<a class="page-link active" href="#">
+															1
+														</a>
+														<a class="page-link" href="#">
+															2
+														</a>
+														<a class="page-link" href="#">
+															3
+														</a>
+														<a class="page-link" href="#">
+															4
+														</a>
+														<a class="page-link" href="#">
+															5
+														</a>
+														<a class="page-link arrow disabled" href="#" aria-label="next">
+															<img src="./images/pagination-next.svg" alt="" />
+														</a>
+														<a class="page-link arrow disabled" href="#" aria-label="next">
+															<img src="./images/calendar-next.svg" alt="" />
+														</a>
+													</div>
+												</div>
+												<div class="tab-pane fade tags-tab p-16" id="Tags" role="tabpanel"
+													aria-labelledby="Tags-tab">
+													<div class="mb-16">
+														<input type="text h-100"
+															class="form-control w-100 taginput primary"
+															value="AUTO OK-2019,2019 LM,OK-2018,OK-2017,OK-2019"
+															data-role="tagsinput" />
+													</div>
+													<div class="outline-card p-2 mb-16">
+														<label class="label d-block fw-medium">Most Used Tags</label>
+														<ul class="chip-list p-0">
+															<li>
+																<a href="#" title="AUTO OK-2019">AUTO OK-2019</a>
+															</li>
+															<li>
+																<a href="#" title="OK-2018">OK-2018</a>
+															</li>
+															<li>
+																<a href="#" title="2019 LM">2019 LM</a>
+															</li>
+														</ul>
+													</div>
+													<p class="text-sm text-gray05">To <span
+															class="fw-bold">remove</span> the tag click on the <span
+															class="fw-bold">"X"</span>. </p>
+													<p class="text-sm text-gray05">To <span class="fw-bold">enter</span>
+														the tag, <span class="fw-bold">type</span>it in or select it
+														from <span class="fw-bold">Most Used</span> (below). </p>
+												</div>
+												<div class="tab-pane fade parcel-tab" id="parcel" role="tabpanel"
+													aria-labelledby="parcel-tab">
+													<div class="p-14p_16p bb">
+														<button
+															class="btn btn-primary smd with-ic third-level-drawer-btn"
+															data-drawer-btn="uploadAttachment">
+															<em class="i">
+																<img src="./images/add-task.svg" alt="" />
+															</em>
+															Add
+														</button>
+													</div>
+													<ul class="attach-file-info">
+														<li>
+															<a href="#" class="file-info-message">
+																<em class="file-icon"></em>
+																<div class="file-info">
+																	<p class="file-name">File-name.doc</p>
+																	<span class="file-description">Lorem ipsum dolor set
+																		amet cinsectetur</span>
+																	<span class="file-upload-detail">Uploaded by John
+																		Doe, 04/20/2023</span>
+																</div>
+															</a>
+															<button class="btn ic-btn delete-ic">
+																<img src="./images/delete-icon-blue.svg" alt="" />
+															</button>
+														</li>
+														<li>
+															<a href="#" class="file-info-message">
+																<em class="file-icon"></em>
+																<div class="file-info">
+																	<p class="file-name">File-name.doc</p>
+																	<span class="file-description">Lorem ipsum dolor set
+																		amet cinsectetur</span>
+																	<span class="file-upload-detail">Uploaded by John
+																		Doe, 04/20/2023</span>
+																</div>
+															</a>
+															<button class="btn ic-btn delete-ic">
+																<img src="./images/delete-icon-blue.svg" alt="" />
+															</button>
+														</li>
+														<li>
+															<a href="#" class="file-info-message">
+																<em class="file-icon"></em>
+																<div class="file-info">
+																	<p class="file-name">File-name.doc</p>
+																	<span class="file-description">Lorem ipsum dolor set
+																		amet cinsectetur</span>
+																	<span class="file-upload-detail">Uploaded by John
+																		Doe, 04/20/2023</span>
+																</div>
+															</a>
+															<button class="btn ic-btn delete-ic">
+																<img src="./images/delete-icon-blue.svg" alt="" />
+															</button>
+														</li>
+														<li>
+															<a href="#" class="file-info-message">
+																<em class="file-icon"></em>
+																<div class="file-info">
+																	<p class="file-name">File-name.doc</p>
+																	<span class="file-description">Lorem ipsum dolor set
+																		amet cinsectetur</span>
+																	<span class="file-upload-detail">Uploaded by John
+																		Doe, 04/20/2023</span>
+																</div>
+															</a>
+															<button class="btn ic-btn delete-ic">
+																<img src="./images/delete-icon-blue.svg" alt="" />
+															</button>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- confidential condition here -->
+									<!-- <div class="col-12">
+										<div class="outline-card mb-0 neighborhoodandschool-info-card">
+											<h6 class="h-title">Neighborhood and Local School Information</h6>
+											<div class="row space-16 mb-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Neighborhood Name</label>
+														<p>Country Creek</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+													<div class="input-val">
+														<label>Neighborhood Type</label>
+														<p>Subdivision</p>
+													</div>
+												</div>
+											</div>
+											<div class="row space-16">
+												<div class="col-12 col-xl-8">
+													<div class="ag-custom-table with-border" id="NeighborhoodandSchoolInfo"></div>
+												</div>
+												<div class="col-12 col-xl-4">
+													<div class="map-inner">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.3624289636427!2d72.59707016423944!3d23.010461272556476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85cedfe04b41%3A0xc3d86f1bc142749b!2sEKA%20Arena!5e0!3m2!1sen!2sin!4v1650601907008!5m2!1sen!2sin"
+															style="border:0;" allowfullscreen="" loading="lazy"
+															referrerpolicy="no-referrer-when-downgrade"></iframe>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div> -->
+								</div>
+							</div>
+							<!-- confidential condition here -->
+							<!-- <div class="tab-pane fade map-tab-outer" id="Map-pane" role="tabpanel"
+								aria-labelledby="Map-tab">
+								<ul class="nav nav-tabs switch-tab" id="mapDigiTab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="bing-tab" data-bs-toggle="tab"
+											data-bs-target="#bing" type="button" role="tab" aria-controls="bing"
+											aria-selected="true">Bing</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="google-tab" data-bs-toggle="tab"
+											data-bs-target="#google" type="button" role="tab" aria-controls="google"
+											aria-selected="false">Google</button>
+									</li>
+								</ul>
+								<div class="tab-content p-0" id="mapDigiTabContent">
+									<div class="tab-pane fade" id="bing" role="tabpanel" aria-labelledby="bing-tab">
+										<div class="map-frame-outer">
+											<div class="mfo-left">
+												<div class="map-inner">
+													<iframe
+														src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.3624289636427!2d72.59707016423944!3d23.010461272556476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85cedfe04b41%3A0xc3d86f1bc142749b!2sEKA%20Arena!5e0!3m2!1sen!2sin!4v1650601907008!5m2!1sen!2sin"
+														style="border:0;" allowfullscreen="" loading="lazy"
+														referrerpolicy="no-referrer-when-downgrade"></iframe>
+												</div>
+											</div>
+											<div class="mfo-right">
+												<div class="map-inner">
+													<iframe
+														src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.268506844679!2d88.40685561423075!3d22.569058738789966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275d234f9a10f%3A0x2696863516302a7c!2sVivekananda%20Yuba%20Bharati%20Krirangan!5e0!3m2!1sen!2sin!4v1650601836059!5m2!1sen!2sin"
+														style="border:0;" allowfullscreen="" loading="lazy"
+														referrerpolicy="no-referrer-when-downgrade"></iframe>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade show active" id="google" role="tabpanel"
+										aria-labelledby="google-tab">
+										<div class="map-frame-outer">
+											<div class="mfo-left">
+												<div class="map-inner">
+													<iframe
+														src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.326559474848!2d-2.2915410847409143!3d53.46262367369725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae73395762f1%3A0x19312432a8b12673!2sManchester%20United%20Football%20Ground!5e0!3m2!1sen!2sin!4v1650601765758!5m2!1sen!2sin"
+														style="border:0;" allowfullscreen="" loading="lazy"
+														referrerpolicy="no-referrer-when-downgrade"></iframe>
+												</div>
+											</div>
+											<div class="mfo-right">
+												<div class="map-inner">
+													<iframe
+														src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.686290912645!2d2.120631114761916!3d41.38090000436139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f576297baf%3A0x44f65330fe1b04b9!2sCamp%20Nou!5e0!3m2!1sen!2sin!4v1650601695557!5m2!1sen!2sin"
+														style="border:0;" allowfullscreen="" loading="lazy"
+														referrerpolicy="no-referrer-when-downgrade"></iframe>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+							<div class="tab-pane fade" id="Scout-Info-pane" role="tabpanel"
+								aria-labelledby="Scout-Info-tab">
+								Scout-Info
+							</div>
+							<!-- confidential condition here -->
+							<!-- <div class="tab-pane fade" id="Tax-Info-pane" role="tabpanel"
+								aria-labelledby="Tax-Info-tab">
+
+								<div class="outline-card last-tax-card">
+									<h6 class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">Last Tax Bill
+										<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+									</h6>
+									<ul class="d-flex list">
+										<li>
+											<div class="input-val">
+												<label>Tax Amount</label>
+												<p>$4,173</p>
+											</div>
+										</li>
+										<li>
+											<div class="input-val">
+												<label>Tax Year</label>
+												<p>2021</p>
+											</div>
+										</li>
+										<li>
+											<div class="input-val">
+												<label>Total Assessed Value</label>
+												<p>$187,996</p>
+											</div>
+										</li>
+										<li>
+											<div class="input-val">
+												<label>Current Property Owner</label>
+												<p>Barnesh Kathy A</p>
+											</div>
+										</li>
+										<li>
+											<div class="input-val">
+												<label>Tax Bill Mailing Address</label>
+												<p>833 ATMORE AVE NORTH PORT FL, 34287</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="table-card">
+									<div class="table-card-title">
+										<h4 class="d-flex align-items-center gap-1 flex-wrap justify-content-between">Open Delinquencies
+											<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+										</h4>
+									</div>
+									<div class="table-card-body">
+										<div class="ag-custom-table" id="openTaxesTable"></div>
+									</div>
+								</div>
+
+								<div class="table-card">
+									<div class="table-card-title">
+										<h4 class="d-flex align-items-center gap-1 flex-wrap justify-content-between">Closed Delinquencies
+											<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+										</h4>
+									</div>
+									<div class="table-card-body">
+										<div class="ag-custom-table" id="closedTaxesTable"></div>
+									</div>
+								</div>
+
+								<div class="table-card">
+									<div class="table-card-title">
+										<h4 class="d-flex align-items-center gap-1 flex-wrap justify-content-between">Delinquencies History
+											<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+										</h4>
+									</div>
+									<div class="table-card-body">
+										<div class="ag-custom-table" id="taxHistoryTable"></div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="Mortgage-Info-pane" role="tabpanel"
+								aria-labelledby="Mortgage-Info-tab">
+								<div class="table-card">
+									<div class="table-card-title">
+										<h4 class="d-flex align-items-center gap-1 flex-wrap justify-content-between">Current Mortgages
+											<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+										</h4>
+									</div>
+									<div class="table-card-body">
+										<div class="ag-custom-table" id="currentMortgagesTable"></div>
+									</div>
+								</div>
+
+								<div class="table-card">
+									<div class="table-card-title">
+										<h4 class="d-flex align-items-center gap-1 flex-wrap justify-content-between">Additional Mortgage info
+											<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+										</h4>
+									</div>
+									<div class="table-card-body">
+										<div class="ag-custom-table" id="additionalMortgageInfoTable"></div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="MLS-Details-pane" role="tabpanel"
+								aria-labelledby="MLS-Details-tab">
+								MLS-Details
+							</div>
+							<div class="tab-pane fade" id="Sale-History-pane" role="tabpanel"
+								aria-labelledby="Sale-History-tab">
+								<div class="table-card">
+									<div class="table-card-title">
+										<h4 class="d-flex align-items-center gap-1 flex-wrap justify-content-between">Sale History
+											<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em class="d-flex"><img src="./images/period-black.svg" alt=""/></em> Last updated 20/11/2023</span>
+										</h4>
+									</div>
+									<div class="table-card-body">
+										<div class="ag-custom-table" id="saleHistoryTable"></div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="Linked-Properties-pane" role="tabpanel"
+								aria-labelledby="Linked-Properties-tab">
+								<div class="row link-property-card space-16">
+									<div class="col-12 col-sm-6 col-xl-3">
+										<div class="outline-card">
+											<h2 class="h2">7</h2>
+											<span>Total Property Owned</span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-3">
+										<div class="outline-card">
+											<h2 class="h2">$488,286</h2>
+											<span>Total Open Loan Amount</span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-3">
+										<div class="outline-card">
+											<h2 class="h2">$1,299,027</h2>
+											<span>Total Estimated Value</span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-3">
+										<div class="outline-card">
+											<h2 class="h2">$1,299,027</h2>
+											<span>Total Estimated Value</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="Comparables-Listings-pane" role="tabpanel"
+								aria-labelledby="Comparables-Listings-tab">
+								Comparables & Near by Listings
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="drawer-footer">
+				<p class="text-sm note"><strong>Discalimer:</strong> The content provided herein is for informational
+					purposes and no representation or warranty is made regarding its accuracy or completeness. Property
+					descriptions, documents, and pictures may not accurately describe or depict the property. You are
+					encouraged to conduct your own due diligence and seek independent professional advice if necessary.
+				</p>
+			</div>
+		</div>
+
+		<!-- Upload Attachment Drawer HTML Start -->
+		<div class="drawer-main upload-attachment-drawer" data-mcs-theme="light" data-drawer-wrapper="uploadAttachment">
+			<div class="drawer-header">
+				<h5 class="drawer-title d-flex gap-2 align-items-center">Upload Attachment
+				</h5>
+				<button type="button" class="btn-close third-level-drawer-close"></button>
+			</div>
+			<div class="disclaimer-body upload-attachment-body inner-scroll">
+				<div class="upload-option">
+					<div class="form-group">
+						<label class="form-label mb-1 text-sm">Attach File</label>
+						<div class="custom-file">
+							<input type="file" name="theFile" id="inputFile" class="custom-file-input">
+							<label class="custom-file-label" for="inputFile">Choose file</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="form-label b-1 text-sm">File Name</label>
+					<input type="text" class="form-control" placeholder="File Name">
+				</div>
+				<div class="form-group">
+					<label class="form-label b-1 text-sm">Description</label>
+					<textarea class="form-control" placeholder="Description"></textarea>
+				</div>
+				<div class="d-flex gap-3 flex-wrap">
+					<button type="button" class="btn btn-primary mw">Add</button>
+					<button type="button" class="btn btn-outline-primary mw third-level-drawer-close">Cancel</button>
+				</div>
+			</div>
+		</div>
+
+		<!--END Property details drawer -->
+
+		<!-- property image gallery Modal -->
+		<div class="modal fade property-image-modal" id="property-image-modal" tabindex="-1" aria-hidden="false"
+			aria-modal="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<h5 class="modal-title"></h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="swiper property-detail-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png" alt="property">
+								</div>
+								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png" alt="property">
+								</div>
+								<div class="swiper-slide"><img src="./images/image-thumb-main-5.png" alt="property">
+								</div>
+							</div>
+							<!-- <div class="swiper-pagination"></div> -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Add to Marketing List Modal -->
+		<div class="modal fade" id="marketListModal" tabindex="-1" aria-labelledby="marketListLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-sms">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title h5" id="marketListLabel">Add to List</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="list-radio-group">
+							<div class="form-check-wrapper selected-radio">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="marketList"
+										id="addToMarketingList" checked>
+									<label class="form-check-label" for="addToMarketingList">
+										Add to List
+									</label>
+								</div>
+								<div class="controls-field">
+									<div class="select2-dropdownParent">
+										<select class="custom-Select2 w-100" name="state"
+											data-placeholder="Select List">
+											<option value="" class="d-none placeholder" selected>Select List</option>
+											<option value="2">2024</option>
+											<option value="3">2023</option>
+											<option value="4">2022</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-check-wrapper">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="marketList"
+										id="newMarketingList">
+									<label class="form-check-label" for="newMarketingList">
+										New List
+									</label>
+								</div>
+								<div class="controls-field">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Enter New List Name">
+									</div>
+									<div class="select2-dropdownParent">
+										<select class="custom-Select2-no-search w-100" name="state"
+											data-placeholder="Favorites">
+											<option value="" class="d-none placeholder" selected>Favorites</option>
+											<option value="1">Favorites</option>
+											<option value="2">Marketing</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary mw">Save</button>
+						<button type="button" class="btn btn-outline-primary mw" data-bs-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal tagsModal -->
+		<div class="modal fade tagsmodal" id="tagsModal" tabindex="-1">
+			<div class="modal-dialog modal-smd modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<h5 class="modal-title">Tags</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body pb-0">
+						<div class="row space-16">
+							<div class="col-12 col-sm-8">
+								<input type="text h-100" class="form-control w-100 taginput"
+									value="AUTO OK-2019,2019 LM,Road" data-role="tagsinput" />
+							</div>
+							<div class="col-12 col-sm-4">
+								<div class="card-mostused-link inner-scroll text-sm">
+									<label class="text-sm mb-1 d-block fw-medium">Most Used Tags</label>
+									<ul>
+										<li>
+											<a href="#" title="Exclude">Exclude</a>
+										</li>
+										<li>
+											<a href="#" title="OK-2018">OK-2018</a>
+										</li>
+										<li>
+											<a href="#" title="OK-2017">OK-2017</a>
+										</li>
+										<li>
+											<a href="#" title="OK-2019">OK-2019</a>
+										</li>
+										<li>
+											<a href="#" title="AUTO OK-2019">AUTO OK-2019</a>
+										</li>
+										<li>
+											<a href="#" title="Road">Road</a>
+										</li>
+										<li>
+											<a href="#" title="2019 LM">2019 LM</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<p class="text-12 text-gray mt-2">Please remove the tags you want deleted by clicking on the "X"
+							or
+							enter the tags that you want attached to the selected parcel.</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary mw">Save</button>
+						<button class="btn btn-outline-primary mw" data-bs-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

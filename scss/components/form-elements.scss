@@ -1034,6 +1034,43 @@ textarea.form-control {
     }
 }
 
+// table 
+.table {
+    &.sm-table {
+        --bs-border-width: 0;
+        border: none;
+
+        th,
+        td {
+            border: none;
+            height: 26px;
+            white-space: nowrap;
+            vertical-align: middle;
+            font-size: 14px;
+            line-height: 100%;
+            padding: 4px;
+            background-color: transparent;
+        }
+
+        th {
+            font-weight: 400;
+            color: #888888;
+
+        }
+
+        td {
+            font-weight: 700;
+            color: #333333;
+        }
+
+        .form-control.h-44 {
+            min-height: 26px;
+            padding: 0 10px;
+            font-weight: 700;
+        }
+    }
+}
+
 // modal
 // ---------------------------------------------------------------------------
 .modal {
@@ -1176,7 +1213,7 @@ textarea.form-control {
     }
 
     input {
-        width: 62px;
+        width: auto;
     }
 
     &.focus {
@@ -1185,6 +1222,32 @@ textarea.form-control {
 
     .tag [data-role="remove"] {
         margin-left: 4px;
+    }
+
+    &:has(+ .taginput.primary) {
+        input {
+          height: 28px;
+        }
+        .tag {
+            border-radius: 50px;
+            background-color: #0056A1;
+            color: #fff;
+            padding: 6px 10px;
+            font-weight: 500;
+
+            [data-role=remove] {
+                box-shadow: none !important;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+
+                &::after {
+                    background-image: url(../images/ic-close-white.svg);
+                    background-size: 20px;
+                }
+            }
+        }
     }
 }
 
@@ -1389,6 +1452,10 @@ textarea.form-control {
 
         &.primary {
             background-color: #0056A1;
+        }
+
+        &.w-255p {
+            min-width: 255px;
         }
     }
 
