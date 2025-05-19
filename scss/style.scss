@@ -34,6 +34,11 @@ body {
     }
 }
 
+.main-content:has(.no-parent-padding) {
+    min-height: auto;
+    padding: 0;
+}
+
 .backdrop {
     position: fixed;
     top: 78px;
