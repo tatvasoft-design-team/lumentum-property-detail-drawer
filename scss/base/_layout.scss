@@ -111,6 +111,18 @@ img {
   }
 }
 
+.mb-32 {
+  margin-bottom: 32px !important;
+
+  @include break-points.bp ('lg-max') {
+    margin-bottom: 30px !important;
+  }
+
+  @include break-points.bp ('sm-max') {
+    margin-bottom: 20px !important;
+  }
+}
+
 .px-20 {
   padding-left: 20px !important;
   padding-right: 20px !important;
@@ -127,7 +139,17 @@ img {
   line-height: 21.6px;
 }
 
-.text-12 {
+.tx-12px {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tx-14px {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.text-xs {
   font-size: 12px !important;
   line-height: 16px !important;
 }
@@ -185,6 +207,11 @@ img {
   color: #888888 !important;
 }
 
+.text-gray07 {
+  color: #444 !important;
+}
+
+
 input[type="text"]::-ms-clear {
   display: none;
   width: 0;
@@ -210,19 +237,6 @@ input[type="text"]::-ms-reveal {
   font-style: normal;
 }
 
-.card-box {
-  border: 1px solid #DDDDDD;
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 16px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-
-  @include break-points.bp(xlg-max) {
-    padding: 10px;
-  }
-}
 
 .hidden-xs {
   display: block !important;
@@ -248,5 +262,87 @@ h5 {
   @include break-points.bp('xs-max') {
     font-size: 20px;
     line-height: 24px
+  }
+}
+
+.custom-switch {
+  position: relative;
+  min-width: 60px;
+  min-height: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-sizing: content-box;
+
+  .switch-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+
+    &:checked {
+      ~.switch-label {
+        background-color: #0056A1;
+
+        &:before {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      ~.switch-handle {
+        left: 50px;
+      }
+    }
+  }
+
+  .switch-label {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background-color: #888;
+    border-radius: 25px;
+    transition: all 0.3s;
+    box-sizing: content-box;
+    min-height: 30px;
+    min-width: 72px;
+    font-weight: 500;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      line-height: 1;
+      transition: all 0.3s;
+      box-sizing: content-box;
+      color: #fff;
+    }
+
+    &:before {
+      content: attr(data-off);
+      right: 11px;
+    }
+
+    &:after {
+      content: attr(data-on);
+      left: 11px;
+      opacity: 0;
+    }
+  }
+
+  .switch-handle {
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: all 0.3s;
   }
 }

@@ -38,6 +38,10 @@
     font-weight: 700;
 }
 
+.ag-custom-table .ag-header-cell:not(:last-child) {
+  border-right: 1px solid #dddddd;
+}
+
 .ag-custom-table .ag-header-cell::before {
     display: none;
 }
@@ -51,16 +55,24 @@
     justify-content: center;
 }
 
+.ag-custom-table .ag-header-cell.text-end .ag-header-cell-label {
+    justify-content: flex-end;
+}
+
 .ag-custom-table .ag-cell-value.ag-cell {
     padding: 0 10px;
     font-size: 14px;
-    line-height: 40px;
+    line-height: 36px;
     color: #333333;
 }
 
 .ag-custom-table .ag-row {
     background: #fff;
     border-bottom: 1px solid #dddddd;
+}
+
+.ag-custom-table .ag-cell:not(:last-child) {
+  border-right: 1px solid #dddddd;
 }
 
 .ag-custom-table .ag-row:before {
@@ -135,8 +147,6 @@
     background: #dddddd;
     border-radius: 4px;
 }
-
-
 
 /* Data tables */
 // existing style ad per retails
