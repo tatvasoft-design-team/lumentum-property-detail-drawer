@@ -588,6 +588,12 @@
 										aria-controls="Mortgage-Info-pane" aria-selected="false">Mortgage Info</button>
 								</li>
 								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="pre-foreclosure-details-tab" data-bs-toggle="tab"
+										data-bs-target="#pre-foreclosure-details" type="button" role="tab"
+										aria-controls="pre-foreclosure-details" aria-selected="true">Pre-Foreclosure
+										Details</button>
+								</li>
+								<li class="nav-item" role="presentation">
 									<button class="nav-link" id="MLS-Details-tab" data-bs-toggle="tab"
 										data-bs-target="#MLS-Details-pane" type="button" role="tab"
 										aria-controls="MLS-Details-pane" aria-selected="false">MLS Details</button>
@@ -608,6 +614,12 @@
 										data-bs-target="#Comparables-Listings-pane" type="button" role="tab"
 										aria-controls="Comparables-Listings-pane" aria-selected="false">Comparables &
 										Near by Listings</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="document-reports-tab" data-bs-toggle="tab"
+										data-bs-target="#document-reports" type="button" role="tab"
+										aria-controls="document-reports" aria-selected="true">Document
+										Reports</button>
 								</li>
 							</ul>
 						</div>
@@ -1709,7 +1721,8 @@
 
 								<!-- with data -->
 								<div>
-									<div class="d-flex flex-wrap align-items-center justify-content-between gap-2 scout-tab-head">
+									<div
+										class="d-flex flex-wrap align-items-center justify-content-between gap-2 scout-tab-head">
 										<h6 class="fw-bold text-16">Images</h6>
 										<div class="d-flex flex-wrap align-items-center gap-2 right-btns">
 											<label class="text-sm text-gray04">Data Collection Date :</label>
@@ -1873,7 +1886,6 @@
 								</div>
 							</div>
 							<!-- end scout tab -->
-
 							<div class="tab-pane fade" id="Tax-Info-pane" role="tabpanel"
 								aria-labelledby="Tax-Info-tab">
 
@@ -1964,8 +1976,6 @@
 									</div>
 								</div>
 							</div>
-
-
 							<div class="tab-pane fade" id="Mortgage-Info-pane" role="tabpanel"
 								aria-labelledby="Mortgage-Info-tab">
 								<div class="table-card">
@@ -1998,9 +2008,726 @@
 									</div>
 								</div>
 							</div>
+							<div class="tab-pane fade" id="pre-foreclosure-details" role="tabpanel"
+								aria-labelledby="pre-foreclosure-details-tab">
+								<h6 class="text-primary fw-bold mb-16">Current Pre-Foreclosures (Active)</h6>
+								<div class="outline-card">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Recording Information
+										<span class="d-flex align-items-center gap-1 text-sm fw-medium text-gray04"><em
+												class="d-flex"><img src="./images/period-black.svg" alt="" /></em> Last
+											updated 20/11/2023</span>
+									</h6>
+									<div class="row space-16">
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Recording Date</label>
+												<p>03/25/2022</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Lender Name</label>
+												<p>Mv Reality Pbc LLC</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Recording Book / Page</label>
+												<p>null /</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>NOD Book / Page</label>
+												<p>/</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Document Type</label>
+												<p>Notice of Lis Pendens</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Document Number</label>
+												<p>2022050350</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row space-16 mb-16">
+									<div class="col-md-6">
+										<div class="outline-card">
+											<h6
+												class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+												Trustee/Attorney Information
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4">
+													<div class="input-val">
+														<label>Phone</label>
+														<p>3053568403</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-8">
+													<div class="input-val">
+														<label>Address</label>
+														<p>134 S Dixie Highway Suite 100 #100 Halandale Beach, FL 33009
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="outline-card">
+											<h6
+												class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+												Original Loan Information
+											</h6>
+											<div class="row space-16">
+												<div class="col-12">
+													<div class="input-val">
+														<label>Document Number</label>
+														<p>HOA</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h6 class="text-primary fw-bold mb-16">Pre-Foreclosure History</h6>
+								<div class="ag-grid-snap-block inner-scroll">
+									<img src="./images/ag-grid-pre-forceclouse-history-table.jpg" alt="" />
+								</div>
+							</div>
 							<div class="tab-pane fade" id="MLS-Details-pane" role="tabpanel"
 								aria-labelledby="MLS-Details-tab">
-								MLS-Details
+								<div class="outline-card">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Listing
+									</h6>
+									<div class="row space-16">
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Status Date</label>
+												<p>08/2022</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Status</label>
+												<p>Fail</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Price</label>
+												<p>$375,800</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Days on Market</label>
+												<p>60</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Listing Type</label>
+												<p>For Sale</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="outline-card">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Description
+									</h6>
+									<p class="text-gray06">Lorem ipsum dolor sit amet consectetur. Fermentum et lorem
+										dignissim lorem fusce. Nunc id molestie et sit. Augue leo tempus neque id
+										viverra vitae vitae. Scelerisque habitant dictumst aliquet vitae lorem. Senectus
+										netus a non a ornare suscipit mattis amet id. Sit tellus id et tincidunt
+										aliquet. Vulputate arcu posuere ut lectus nulla interdum euismod fermentum.
+										Aliquam diam tincidunt scelerisque hac id adipiscing ante sed et. Dui enim
+										varius elit in turpis et tellus a elit. Neque fermentum elit sed metus in. Ut
+										faucibus purus dui dolor. Massa in habitant scelerisque in libero in mi odio
+										pellentesque.</p>
+								</div>
+								<div class="outline-card">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Property Details
+									</h6>
+									<div class="row space-16">
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Property Type</label>
+												<p>Residential</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Living Area</label>
+												<p>1699 Sqft</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Total Bedrooms</label>
+												<p>3</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Total Bathrooms</label>
+												<p>2</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Price Per Sqft</label>
+												<p>$232</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>APN</label>
+												<p>0973170525</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row space-16 mb-16">
+									<div class="col-lg-6">
+										<div class="outline-card mb-0 h-100">
+											<h6
+												class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+												Interior Features
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xxl-4">
+													<div class="input-val">
+														<label>Interior Features</label>
+														<p>Coiling Fans(s)</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xxl-8">
+													<div class="input-val">
+														<label>Appliance Features</label>
+														<p>Water Softener</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="outline-card mb-0 h-100">
+											<h6
+												class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+												Exterior Features
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-4">
+													<div class="input-val">
+														<label>Garage Type</label>
+														<p>Attached Garage</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-8">
+													<div class="input-val">
+														<label>Exterior Features</label>
+														<p>Sliding Doors</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="outline-card">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Agent In formation
+									</h6>
+									<div class="row space-16">
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Agent Name</label>
+												<p>Leonard Hughes </p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Agent Phone</label>
+												<p>841-258-4373</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Agent Email</label>
+												<p>yourfloridaproperty@live.com</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Office Name</label>
+												<p>ALLISON JAMES ESTATES & HOMES</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Office Phone </label>
+												<p>941-800-4955</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table-card">
+									<div class="table-card-title">
+										<h4 class="d-flex align-items-center gap-1 flex-wrap justify-content-between">
+											Listing History
+										</h4>
+									</div>
+									<div class="table-card-body">
+										<div class="ag-grid-snap-block inner-scroll">
+											<img src="./images/ag-grid-MLS-table.jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="outline-card">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Property Characteristics
+									</h6>
+									<div class="row space-16">
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Total Rooms</label>
+												<p>6 </p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Bedrooms</label>
+												<p>3</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Total Bathrooms</label>
+												<p>2</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Number of Bathroom Fixtures</label>
+												<p>1</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Air Conditioning Type</label>
+												<p>Central</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Heating Type</label>
+												<p>Central</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Interior Wall Type</label>
+												<p>Gypsum Board (Drywall, Sheetrock, etc.)</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Garage Type</label>
+												<p>Attached Garage</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Pool Type</label>
+												<p>Pool (Yes)</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Porch Type</label>
+												<p>Porch - Open</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Patio Type</label>
+												<p>Patio</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Building Condition</label>
+												<p>Average</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Building Quality</label>
+												<p>C+</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Construction Type</label>
+												<p>Masonry</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Exterior Wall Type</label>
+												<p>Stucco</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Roof Type</label>
+												<p>HLP</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Roof Cover Type</label>
+												<p>Asphalt</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Sewer Type</label>
+												<p>Septic</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Water Source</label>
+												<p>Well</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Number of Buldings</label>
+												<p>1</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Number of Stories</label>
+												<p>1</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Number of Residential Units</label>
+												<p>1</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="outline-card">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Building Size
+									</h6>
+									<div class="row space-16">
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Building Area</label>
+												<p>2,139 Sqft</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Living Area</label>
+												<p>1,235 Sqft</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Gross Area</label>
+												<p>2,139 Sqft</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Taxable Area</label>
+												<p>2,139 Sqft</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Garage Area</label>
+												<p>440 Sqft</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="outline-card">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Land/Location Info
+									</h6>
+									<div class="row space-16">
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>APN</label>
+												<p>0958-06-9407</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Property Class</label>
+												<p>RESIDENTIAL</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Property Type</label>
+												<p>Single Family Residential</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Zoning</label>
+												<p>RSF2</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Country Land Use Code</label>
+												<p>0100</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Census Tract</label>
+												<p>002722</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Lot Size</label>
+												<p>0.23 Acres</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Lot Area</label>
+												<p>10,000 Sqft</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>School District</label>
+												<p>Sarasota country school district</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Block</label>
+												<p>1705</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Lot Number</label>
+												<p>25</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Census Tract</label>
+												<p>002722</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Municipality</label>
+												<p>CITY OF NORTH PORT</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Subdivision</label>
+												<p>PORT CHARLOTTE SUB 36</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Meridian</label>
+												<p>SEC 19 TWN 39S RING 21E</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="outline-card">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Land/Location Info
+									</h6>
+									<p class="text-gray06">LOT 25 BLK 1705 36TH ADD TO PORT CHARLOTTE</p>
+								</div>
+								<div class="outline-card">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Tax Assessment Information
+									</h6>
+									<div class="row space-16">
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Total Assessed Value</label>
+												<p>$187,256</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Assessment Year</label>
+												<p>2021</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Tax Year</label>
+												<p>2021</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Market Total Value</label>
+												<p>$201,000</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Market Land Value</label>
+												<p>$9,100</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Market Improvement Value</label>
+												<p>$191,900</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Property Tax</label>
+												<p>$4,173</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Delinquent Tax Year</label>
+												<p>2021</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Tax Exemption(s)</label>
+												<p>Homestead</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Tax Jurisdiction</label>
+												<p>0500</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row space-16 mb-16">
+									<div class="col-lg-6">
+										<div class="outline-card mb-0 h-100">
+											<h6
+												class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+												HOA Information
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xxl-4">
+													<div class="input-val">
+														<label>HOA Type</label>
+														<p>Planned Unit Developement</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xxl-4">
+													<div class="input-val">
+														<label>HOA Fee</label>
+														<p>$169</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="outline-card mb-0 h-100">
+											<h6
+												class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+												Last Arm’s Length Sale Information
+											</h6>
+											<div class="row space-16">
+												<div class="col-12 col-sm-6 col-md-4 col-xxl-4">
+													<div class="input-val">
+														<label>Sale Date</label>
+														<p>04/10/2017</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xxl-4">
+													<div class="input-val">
+														<label>Sale Amount</label>
+														<p>$169,125</p>
+													</div>
+												</div>
+												<div class="col-12 col-sm-6 col-md-4 col-xxl-4">
+													<div class="input-val">
+														<label>Purchase Method</label>
+														<p>Cash</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="outline-card mb-0">
+									<h6
+										class="h-title d-flex align-items-center gap-1 flex-wrap justify-content-between">
+										Recording Information
+									</h6>
+									<div class="row space-16">
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Recording Date</label>
+												<p>04/10/2017</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Document Type</label>
+												<p>Warranty Deed</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+											<div class="input-val">
+												<label>Document Number</label>
+												<p>2018048261</p>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="tab-pane fade" id="Sale-History-pane" role="tabpanel"
 								aria-labelledby="Sale-History-tab">
@@ -2048,9 +2775,766 @@
 									</div>
 								</div>
 							</div>
-							<div class="tab-pane fade" id="Comparables-Listings-pane" role="tabpanel"
-								aria-labelledby="Comparables-Listings-tab">
-								Comparables & Near by Listings
+							<div class="tab-pane fade comparables-Listings-pane" id="Comparables-Listings-pane"
+								role="tabpanel" aria-labelledby="Comparables-Listings-tab">
+								<div class="scrollable-tab-wrapper secondary-box-tab-wrapper">
+									<div class="feature-tab-links has-arrows">
+										<em class="arrow-link prev-link disable"><img
+												src="./images/calendar-previous.svg" alt="Left arrow"></em>
+										<em class="arrow-link next-link"><img src="./images/calendar-next.svg"
+												alt="Right arrow"></em>
+										<ul class="nav nav-tabs secondary-box-tab" id="secondaryTab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<button class="nav-link active" id="comparables-box-tab"
+													data-bs-toggle="tab" data-bs-target="#comparables-tab-pane"
+													type="button" role="tab" aria-controls="comparables-tab-pane"
+													aria-selected="true"><span class="number">36</span><span
+														class="label">Comparables</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="flip-comps-tab" data-bs-toggle="tab"
+													data-bs-target="#flip-comps-tab-pane" type="button" role="tab"
+													aria-controls="flip-comps-tab-pane" aria-selected="false"><span
+														class="number">9</span><span class="label">Flip
+														Comps</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="neighbors-tab" data-bs-toggle="tab"
+													data-bs-target="#neighbors-tab-pane" type="button" role="tab"
+													aria-controls="neighbors-tab-pane" aria-selected="false"><span
+														class="number">100</span><span
+														class="label">Neighbors</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="cash-buyers-tab" data-bs-toggle="tab"
+													data-bs-target="#cash-buyers-tab-pane" type="button" role="tab"
+													aria-controls="cash-buyers-tab-pane" aria-selected="false"><span
+														class="number">150</span><span class="label">Cash
+														Buyers</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="pre-foreclosures-tab" data-bs-toggle="tab"
+													data-bs-target="#pre-foreclosures-tab-pane" type="button" role="tab"
+													aria-controls="pre-foreclosures-tab-pane"
+													aria-selected="false"><span class="number">8</span><span
+														class="label">Pre-Foreclosures</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="bank-owned-tab" data-bs-toggle="tab"
+													data-bs-target="#bank-owned-tab-pane" type="button" role="tab"
+													aria-controls="bank-owned-tab-pane" aria-selected="false"><span
+														class="number">1</span><span class="label">Bank
+														Owned</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="liens-tab" data-bs-toggle="tab"
+													data-bs-target="#liens-tab-pane" type="button" role="tab"
+													aria-controls="liens-tab-pane" aria-selected="false"><span
+														class="number">89</span><span
+														class="label">Liens</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="high-equity-tab" data-bs-toggle="tab"
+													data-bs-target="#high-equity-tab-pane" type="button" role="tab"
+													aria-controls="high-equity-tab-pane" aria-selected="false"><span
+														class="number">150</span><span class="label">High
+														Equity</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="vacant-tab" data-bs-toggle="tab"
+													data-bs-target="#vacant-tab-pane" type="button" role="tab"
+													aria-controls="vacant-tab-pane" aria-selected="false"><span
+														class="number">31</span><span
+														class="label">Vacant</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="free-clear-tab" data-bs-toggle="tab"
+													data-bs-target="#free-clear-tab-pane" type="button" role="tab"
+													aria-controls="free-clear-tab-pane" aria-selected="false"><span
+														class="number">150</span><span class="label">Free &
+														Clear</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="bankruptcy-tab" data-bs-toggle="tab"
+													data-bs-target="#bankruptcy-tab-pane" type="button" role="tab"
+													aria-controls="bankruptcy-tab-pane" aria-selected="false"><span
+														class="number">3</span><span
+														class="label">Bankruptcy</span></button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="divorce-tab" data-bs-toggle="tab"
+													data-bs-target="#divorce-tab-pane" type="button" role="tab"
+													aria-controls="divorce-tab-pane" aria-selected="false"><span
+														class="number">3</span><span
+														class="label">Divorce</span></button>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-content p-0" id="secondaryTabContent">
+										<div class="tab-pane fade show active" id="comparables-tab-pane" role="tabpanel"
+											aria-labelledby="comparables-box-tab" tabindex="0">
+											<div class="comparable-tab-panel-inner">
+												<div class="left-section">
+													<div
+														class="d-flex align-items-center flex-wrap justify-content-between gap-2 mb-10">
+														<h6 class="text-primary fw-bold">Comparables Search</h6>
+														<button type="button"
+															class="btn btn-outline-primary sm">Reset</button>
+													</div>
+													<div class="grey-box">
+														<div class="custom-row">
+															<div class="custom-col">
+																<label class="form-label">Date Range</label>
+																<div class="inner-row">
+																	<div class="inner-col">
+																		<input type="text"
+																			class="form-control date-picker-input has-no-icon"
+																			placeholder="12/21/2021">
+																	</div>
+																	<div class="inner-col">
+																		<input type="text"
+																			class="form-control date-picker-input has-no-icon"
+																			placeholder="12/21/2021">
+																	</div>
+																</div>
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Square Footage</label>
+																<div class="inner-row">
+																	<div class="inner-col">
+																		<input type="text" class="form-control"
+																			placeholder="1368">
+																	</div>
+																	<div class="inner-col">
+																		<input type="text" class="form-control"
+																			placeholder="2025">
+																	</div>
+																</div>
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Distance (Miles)</label>
+																<input type="text" class="form-control"
+																	placeholder="1368">
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Bedrooms</label>
+																<div class="inner-row">
+																	<div class="inner-col">
+																		<input type="text" class="form-control"
+																			placeholder="Min">
+																	</div>
+																	<div class="inner-col">
+																		<input type="text" class="form-control"
+																			placeholder="Max">
+																	</div>
+																</div>
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Lot Size</label>
+																<div class="inner-row">
+																	<div class="inner-col">
+																		<input type="text" class="form-control"
+																			placeholder="Min">
+																	</div>
+																	<div class="inner-col">
+																		<input type="text" class="form-control"
+																			placeholder="Max">
+																	</div>
+																</div>
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Property Class</label>
+																<div class="select2-dropdownParent">
+																	<select class="custom-Select2-no-search w-100"
+																		name="state" data-placeholder="Select">
+																		<option value="" class="d-none placeholder"
+																			selected>Select</option>
+																		<option value="1">All</option>
+																		<option value="2">Item 2</option>
+																	</select>
+																</div>
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Bedrooms</label>
+																<div class="inner-row">
+																	<div class="inner-col">
+																		<input type="text" class="form-control"
+																			placeholder="Min">
+																	</div>
+																	<div class="inner-col">
+																		<input type="text" class="form-control"
+																			placeholder="Max">
+																	</div>
+																</div>
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Status</label>
+																<div class="select2-dropdownParent">
+																	<select class="custom-Select2-no-search w-100"
+																		name="state" data-placeholder="Select">
+																		<option value="" class="d-none placeholder"
+																			selected>Select</option>
+																		<option value="1">Sold</option>
+																		<option value="2">Available</option>
+																	</select>
+																</div>
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Property Type</label>
+																<div class="select2-dropdownParent">
+																	<select class="custom-Select2-no-search w-100"
+																		name="state" data-placeholder="Select">
+																		<option value="" class="d-none placeholder"
+																			selected>Select</option>
+																		<option value="1">Single Family Residental
+																		</option>
+																		<option value="2">Available</option>
+																	</select>
+																</div>
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Year Built</label>
+																<div class="inner-row">
+																	<div class="inner-col">
+																		<input type="text" class="form-control"
+																			placeholder="Min">
+																	</div>
+																	<div class="inner-col">
+																		<input type="text" class="form-control"
+																			placeholder="Max">
+																	</div>
+																</div>
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Public Record Sale
+																	Situation</label>
+																<div class="select2-dropdownParent">
+																	<select class="custom-Select2-no-search w-100"
+																		name="state" data-placeholder="Select">
+																		<option value="" class="d-none placeholder"
+																			selected>Select</option>
+																		<option value="1">All</option>
+																		<option value="2">Lorem</option>
+																	</select>
+																</div>
+															</div>
+															<div class="custom-col">
+																<label class="form-label">Multi-Parcel Sales</label>
+																<div class="select2-dropdownParent">
+																	<select class="custom-Select2-no-search w-100"
+																		name="state" data-placeholder="Select">
+																		<option value="" class="d-none placeholder"
+																			selected>Select</option>
+																		<option value="1">All</option>
+																		<option value="2">Lorem</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="digimap-map">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.4040427272944!2d-80.8457192854455!3d35.271079359965086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a0f065e5766d%3A0xd766e19406d9d6e1!2sVictory%20Lane%20Indoor%20Karting!5e0!3m2!1sen!2sin!4v1649065996106!5m2!1sen!2sin"
+															style="border:0;" allowfullscreen="" loading="lazy"
+															referrerpolicy="no-referrer-when-downgrade"></iframe>
+														<a href="#" class="fill-icon edit"> <img
+																src="./images/edit-icon.svg" alt="" /></a>
+														<div class="map-info-box">
+															<p>Draw a shape on the map in the area you would like
+																to search. Right Click or press Enter to Search.</p>
+															<div class="btn-combo">
+																<button type="button"
+																	class="btn btn-outline-primary smd close">Cancel</button>
+																<button type="button"
+																	class="btn btn-primary smd">Search</button>
+															</div>
+														</div>
+													</div>
+													<div class="digimap-map-legends">
+														<ul>
+															<li>
+																<div class="icon blue-bg"></div>
+																<span>Cash</span>
+															</li>
+															<li>
+																<div class="icon sky-blue-bg"></div>
+																<span>Foreclosure</span>
+															</li>
+															<li>
+																<div class="icon dark-orange-bg"></div>
+																<span>Bank</span>
+															</li>
+															<li>
+																<div class="icon pink-bg"></div>
+																<span>New Construction</span>
+															</li>
+															<li>
+																<div class="icon purple-bg"></div>
+																<span>Intra Family</span>
+															</li>
+															<li>
+																<div class="icon red-bg"></div>
+																<span>Current Property</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="right-section">
+													<div
+														class="d-flex align-items-center flex-wrap justify-content-between gap-2 mb-10">
+														<h6 class="text-primary fw-bold">Comparables Properties (36)
+														</h6>
+
+														<div class="d-flex align-items-center gap-2">
+															<button type="button" class="btn btn-outline-primary sm"
+																data-bs-toggle="modal" data-bs-target="#infoModal">Save
+																Comps</button>
+															<button type="button" class="btn btn-outline-primary sm"
+																data-bs-toggle="modal"
+																data-bs-target="#marketListModal">Add
+																to
+																List</button>
+															<div class="dropdown primary-bg-dropdown">
+																<button class="btn btn-primary sm dropdown-toggle"
+																	type="button" data-bs-toggle="dropdown"
+																	aria-expanded="false">Actions</button>
+																<ul class="dropdown-menu dropdown-menu-end">
+																	<li><a class="dropdown-item" href="#">View Comp
+																			Report</a>
+																	</li>
+																	<li><a class="dropdown-item" href="#">Add to
+																			Favorites</a>
+																	</li>
+																	<li><a class="dropdown-item" href="#">Export
+																			Comps</a>
+																	</li>
+																	<li><a class="dropdown-item" href="#">Export Comps
+																			CSV</a>
+																	</li>
+																</ul>
+															</div>
+															<div
+																class="dropdown arrow-dropdown customize-layout-dropdown">
+																<button type="button"
+																	class="btn btn-outline-primary sm me-0"
+																	data-bs-toggle="dropdown" aria-expanded="false"
+																	data-bs-auto-close="outside" data-bs-offset="0,14">
+																	<img src="./images/settings-primary-icon.svg"
+																		alt="" />
+																</button>
+																<ul class="dropdown-menu dropdown-menu-end">
+																	<h6 class="heading">Customize Your Layout</h6>
+																	<div class="list-radio-group">
+																		<div
+																			class="form-check-wrapper selected-radio mb-16">
+																			<div class="form-check">
+																				<input class="form-check-input"
+																					type="radio"
+																					name="customizeLayoutList"
+																					id="savedLayoutList" checked>
+																				<label class="form-check-label"
+																					for="savedLayoutList">
+																					Saved Layout
+																				</label>
+																			</div>
+																			<div class="controls-field">
+																				<div class="select2-dropdownParent">
+																					<select
+																						class="custom-Select2-no-search w-100"
+																						name="state"
+																						data-placeholder="Select List">
+																						<option value="1">Select Saved
+																							Layout
+																						</option>
+																						<option value="2">Item 2
+																						</option>
+																					</select>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="form-check-wrapper mb-16">
+																			<div class="form-check">
+																				<input class="form-check-input"
+																					type="radio"
+																					name="customizeLayoutList"
+																					id="createNewLayoutList">
+																				<label class="form-check-label"
+																					for="createNewLayoutList">
+																					Create New Layout
+																				</label>
+																			</div>
+																			<div class="controls-field">
+																				<input type="text"
+																					class="form-control mb-10"
+																					placeholder="New Layout">
+																				<div class="checkbox-group-outer">
+																					<div class="row">
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="Address" checked
+																									disabled>
+																								<label
+																									class="form-check-label"
+																									for="Address">Address</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="SaleAmount">
+																								<label
+																									class="form-check-label"
+																									for="SaleAmount">Sale
+																									Amount</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="LotSqft">
+																								<label
+																									class="form-check-label"
+																									for="LotSqft">Lot
+																									Sqft</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="MultiParcel">
+																								<label
+																									class="form-check-label"
+																									for="MultiParcel">Multi-Parcel</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="Photo">
+																								<label
+																									class="form-check-label"
+																									for="Photo">Photo</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="DaysOnMarket">
+																								<label
+																									class="form-check-label"
+																									for="DaysOnMarket">Days
+																									On
+																									Market</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="YearBuilt">
+																								<label
+																									class="form-check-label"
+																									for="YearBuilt">Year
+																									Built</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="Distance">
+																								<label
+																									class="form-check-label"
+																									for="Distance">Distance</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="PropertyType">
+																								<label
+																									class="form-check-label"
+																									for="PropertyType">Property
+																									Type</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="Beds">
+																								<label
+																									class="form-check-label"
+																									for="Beds">Beds</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="PPSF">
+																								<label
+																									class="form-check-label"
+																									for="PPSF">PPSF</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="Status">
+																								<label
+																									class="form-check-label"
+																									for="Status">Status</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="Baths">
+																								<label
+																									class="form-check-label"
+																									for="Baths">Baths</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="PoolPresent">
+																								<label
+																									class="form-check-label"
+																									for="PoolPresent">Pool
+																									Present</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="SaleDate">
+																								<label
+																									class="form-check-label"
+																									for="SaleDate">Sale
+																									Date</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="Sqft">
+																								<label
+																									class="form-check-label"
+																									for="Sqft">Sqft</label>
+																							</div>
+																						</div>
+																						<div
+																							class="col-12 col-sm-6 col-md-4 col-lg-3">
+																							<div class="form-check">
+																								<input type="checkbox"
+																									class="form-check-input"
+																									id="SaleSituation">
+																								<label
+																									class="form-check-label"
+																									for="SaleSituation">Sale
+																									Situation</label>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="d-flex flex-wrap align-items-center gap-3 justify-content-between">
+																		<div class="form-check">
+																			<input type="checkbox"
+																				class="form-check-input"
+																				id="UseAsDefaultLayout">
+																			<label class="form-check-label"
+																				for="UseAsDefaultLayout">Use as Default
+																				Layout</label>
+																		</div>
+																		<div class="d-flex align-items-center gap-2 ">
+																			<button type="button"
+																				class="btn btn-outline-primary"
+																				data-bs-dismiss="modal">Cancel</button>
+																			<button type="button"
+																				class="btn btn-primary">Apply
+																				& Save</button>
+																		</div>
+																	</div>
+
+																</ul>
+															</div>
+														</div>
+													</div>
+													<ul class="avg-content-block">
+														<li>
+															<p>$326,369</p>
+															<span>Avg. Sale Price</span>
+														</li>
+														<li>
+															<p>$193,85</p>
+															<span>Avg. PPSF</span>
+														</li>
+														<li>
+															<p>30</p>
+															<span>Avg. Days On Market</span>
+														</li>
+													</ul>
+													<div class="table-card">
+														<div
+															class="table-card-title d-flex align-items-center gap-2 justify-content-between flex-wrap">
+															<p class="select-count text-13 text-gray06">10 Selected</p>
+															<div
+																class="radio-group right-radio-group d-flex align-items-center gap-2">
+																<div class="form-check">
+																	<input class="form-check-input" type="radio"
+																		name="Yes" id="public" disabled checked>
+																	<label class="form-check-label" for="public">
+																		Public Record
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input class="form-check-input" type="radio"
+																		name="Yes" id="mls">
+																	<label class="form-check-label" for="mls">
+																		MLS
+																	</label>
+																</div>
+																<div class="form-check">
+																	<input class="form-check-input" type="radio"
+																		name="Yes" id="both">
+																	<label class="form-check-label" for="both">
+																		Both
+																	</label>
+																</div>
+															</div>
+														</div>
+														<div class="table-card-body">
+															<div class="ag-grid-snap-block inner-scroll h-auto third-level-drawer-btn"
+																data-drawer-btn="imageDrawer">
+																<img src="./images/ag-grid-comparables-table.jpg"
+																	alt="" />
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="flip-comps-tab-pane" role="tabpanel"
+											aria-labelledby="flip-comps-tab" tabindex="0">Item 2</div>
+										<div class="tab-pane fade" id="neighbors-tab-pane" role="tabpanel"
+											aria-labelledby="neighbors-tab" tabindex="0">Item 3</div>
+										<div class="tab-pane fade" id="cash-buyers-tab-pane" role="tabpanel"
+											aria-labelledby="cash-buyers-tab" tabindex="0">Item 4
+										</div>
+										<div class="tab-pane fade" id="pre-foreclosures-tab-pane" role="tabpanel"
+											aria-labelledby="pre-foreclosures-tab" tabindex="0">Item
+											5
+										</div>
+										<div class="tab-pane fade" id="bank-owned-tab-pane" role="tabpanel"
+											aria-labelledby="bank-owned-tab" tabindex="0">Item
+											6
+										</div>
+										<div class="tab-pane fade" id="liens-tab-pane" role="tabpanel"
+											aria-labelledby="liens-tab" tabindex="0">
+											Item 7
+										</div>
+										<div class="tab-pane fade" id="high-equity-tab-pane" role="tabpanel"
+											aria-labelledby="high-equity-tab" tabindex="0">Item
+											8
+										</div>
+										<div class="tab-pane fade" id="vacant-tab-pane" role="tabpanel"
+											aria-labelledby="vacant-tab" tabindex="0">
+											Item
+											9
+										</div>
+										<div class="tab-pane fade" id="free-clear-tab-pane" role="tabpanel"
+											aria-labelledby="free-clear-tab" tabindex="0">Item 10
+										</div>
+										<div class="tab-pane fade" id="bankruptcy-tab-pane" role="tabpanel"
+											aria-labelledby="bankruptcy-tab" tabindex="0">Item
+											11
+										</div>
+										<div class="tab-pane fade" id="divorce-tab-pane" role="tabpanel"
+											aria-labelledby="divorce-tab" tabindex="0">Item
+											12
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="document-reports" role="tabpanel"
+								aria-labelledby="document-reports-tab">
+								<div>
+									<div class="row space-16">
+										<div class="col-lg-8">
+											<div class="table-card">
+												<div class="table-card-title">
+													<h4
+														class="d-flex align-items-center gap-1 flex-wrap justify-content-between">
+														Documents & Reports
+														<button class="btn btn-outline-primary xs with-ic">
+															<em class="i">
+																<img src="./images/add-blue.svg" alt="" />
+															</em>
+															Add Document
+														</button>
+													</h4>
+												</div>
+												<div class="table-card-body">
+													<div class="ag-grid-snap-block inner-scroll">
+														<img src="./images/ag-grid-documents&reportstable-table.jpg"
+															alt="" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="table-card">
+												<div class="table-card-title">
+													<h4
+														class="d-flex align-items-center gap-1 flex-wrap justify-content-between">
+														Premium Reports
+													</h4>
+												</div>
+												<div class="table-card-body">
+													<div class="ag-grid-snap-block inner-scroll">
+														<img src="./images/ag-grid-premium-report-table.jpg" alt="" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -2093,6 +3577,163 @@
 				<div class="d-flex gap-3 flex-wrap">
 					<button type="button" class="btn btn-primary mw">Add</button>
 					<button type="button" class="btn btn-outline-primary mw third-level-drawer-close">Cancel</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Property Detail Info Drawer -->
+		<div class="drawer-main image-drawer" data-mcs-theme="light" data-drawer-wrapper="imageDrawer">
+			<div class="drawer-header">
+				<h5 class="drawer-title d-flex gap-2 align-items-center">2241 Honey Ln North Port, FL 34286
+				</h5>
+				<div class="right-side">
+					<button class="btn  btn-outline-white smd tx-16px">Map View</button>
+					<button type="button" class="btn-close third-level-drawer-close"></button>
+				</div>
+			</div>
+			<div class="drawer-body p-16 inner-scroll">
+				<div class="swiper property-info-slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="single-slide">
+								<img src="./images/large-room-image.png" alt="room">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="single-slide">
+								<img src="./images/large-room-image.png" alt="room">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="single-slide">
+								<img src="./images/large-room-image.png" alt="room">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="single-slide">
+								<img src="./images/large-room-image.png" alt="room">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="single-slide">
+								<img src="./images/large-room-image.png" alt="room">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next auction-button-next"></div>
+					<div class="swiper-button-prev auction-button-prev"></div>
+				</div>
+				<div thumbsSlider="" class="swiper thumbnail-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" class="single-slide">
+								<img src="./images/large-room-image.png" alt="room">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="single-slide">
+								<img src="./images/large-room-image.png" alt="room">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="single-slide">
+								<img src="./images/large-room-image.png" alt="room">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="single-slide">
+								<img src="./images/large-room-image.png" alt="room">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="single-slide">
+								<img src="./images/large-room-image.png" alt="room">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="property-listing-wrapper">
+					<div class="property-listing">
+						<div class="pl-left">
+							<span class="property-label">Beds :</span>
+							<p class="property-value">2</p>
+						</div>
+						<div class="pl-right">
+							<span class="property-label">Status</span>
+							<p class="property-value">Off Market</p>
+						</div>
+					</div>
+					<div class="property-listing">
+						<div class="pl-left">
+							<span class="property-label">Baths :</span>
+							<p class="property-value">2</p>
+						</div>
+						<div class="pl-right">
+							<span class="property-label">Distressed :</span>
+							<p class="property-value">No</p>
+						</div>
+					</div>
+					<div class="property-listing">
+						<div class="pl-left">
+							<span class="property-label">Sqft :</span>
+							<p class="property-value">1,548</p>
+						</div>
+						<div class="pl-right">
+							<span class="property-label">HOA/COA :</span>
+							<p class="property-value">Yes</p>
+						</div>
+					</div>
+					<div class="property-listing">
+						<div class="pl-left">
+							<span class="property-label">Lot Size :</span>
+							<p class="property-value">10,000</p>
+						</div>
+						<div class="pl-right">
+							<span class="property-label">Owner Type :</span>
+							<p class="property-value">Individual</p>
+						</div>
+					</div>
+					<div class="property-listing">
+						<div class="pl-left">
+							<span class="property-label">Year Built :</span>
+							<p class="property-value">2021</p>
+						</div>
+						<div class="pl-right">
+							<span class="property-label">Owner Status :</span>
+							<p class="property-value">Non-Owner Occupied</p>
+						</div>
+					</div>
+					<div class="property-listing">
+						<div class="pl-left">
+							<span class="property-label">APN :</span>
+							<p class="property-value">0987-01-3927</p>
+						</div>
+						<div class="pl-right">
+							<span class="property-label">Occupancy :</span>
+							<p class="property-value">Occupied</p>
+						</div>
+					</div>
+					<div class="property-listing">
+						<div class="pl-left">
+							<span class="property-label">Estimated Val :</span>
+							<p class="property-value">$422,581</p>
+						</div>
+						<div class="pl-right">
+							<span class="property-label">Length of Ownership :</span>
+							<p class="property-value">1 Year 11 Months</p>
+						</div>
+					</div>
+					<div class="property-listing">
+						<div class="pl-left">
+							<span class="property-label">Property Type :</span>
+							<p class="property-value">Single Family Residential</p>
+						</div>
+						<div class="pl-right">
+							<span class="property-label">Country :</span>
+							<p class="property-value">Sarasota</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -2620,6 +4261,102 @@
 		</div>
 		<!--END scout tab property Drawer -->
 
+		<!-- modals -->
+		<!-- Info Modal -->
+		<div class="modal fade info-modal" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-sms">
+				<div class="modal-content">
+					<div class="modal-body text-center pt-3 pb-0">
+						<em class="ic-warning mb-3 d-inline-flex">
+							<img src="./images/info-lg-primary-icon.svg" alt="" />
+						</em>
+						<p>
+							This action can only be performed on Saved Properties. Would you like to save this property?
+						</p>
+					</div>
+					<div class="modal-footer button-group justify-content-center">
+						<button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal"
+							data-bs-target="#groupListModal">Ok</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Add to Group List Modal -->
+		<div class="modal fade" id="groupListModal" tabindex="-1" aria-labelledby="groupListLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-sms">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title h5" id="marketListLabel">Add to Group</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="list-radio-group">
+							<div class="form-check-wrapper selected-radio">
+								<div class="form-check mb-0">
+									<input class="form-check-input" type="radio" name="addGroup" id="myProperty"
+										checked>
+									<label class="form-check-label" for="myProperty">
+										My Property
+									</label>
+								</div>
+							</div>
+							<div class="form-check-wrapper">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="addGroup" id="otherGroups">
+									<label class="form-check-label" for="otherGroups">
+										Other Groups
+									</label>
+								</div>
+								<div class="controls-field">
+									<select class="custom-Select2-no-search no-parent w-100">
+										<option value="1">Select Group</option>
+										<option value="2">Item 2</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-check-wrapper">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="addGroup" id="createNewGroup">
+									<label class="form-check-label" for="createNewGroup">
+										Create New Group
+									</label>
+								</div>
+								<div class="controls-field">
+									<input type="text" class="form-control" placeholder="New Group">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-outline-primary md" data-bs-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary md" data-bs-toggle="modal"
+							data-bs-target="#verifySuccess">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Success Modal -->
+		<div class="modal fade success-modal" id="verifySuccess" tabindex="-1" aria-labelledby="verifySuccessModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-sms">
+				<div class="modal-content">
+					<div class="modal-body">
+						<em><img src="./images/success-check.svg" alt="" /></em>
+						<h3 class="text-success mb-16 fw-bold">Success!</h3>
+						<p class="text-sm">
+							Comps search saved successfully
+						</p>
+					</div>
+					<div class="modal-footer justify-content-center">
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 	</div>

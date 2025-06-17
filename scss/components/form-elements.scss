@@ -152,6 +152,20 @@
     &.h-44 {
         min-height: 44px;
     }
+
+    &.h-28 {
+        min-height: 28px;
+        padding: 4px 10px;
+    }
+    
+    &.color-picker {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        padding: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 }
 
 textarea.form-control {
@@ -427,7 +441,6 @@ textarea.form-control {
     }
 }
 
-
 .btn.with-ic {
     display: flex;
     align-items: center;
@@ -469,6 +482,23 @@ textarea.form-control {
     --bs-btn-disabled-color: #0056A1;
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #0056A1;
+    --bs-gradient: none;
+}
+
+.btn-outline-danger {
+    --bs-btn-color: #FF6464;
+    --bs-btn-border-color: rgba(255, 100, 100, 0.4);
+    --bs-btn-hover-color: #FF6464;
+    --bs-btn-hover-bg: #FFC7C7;
+    --bs-btn-hover-border-color: #dc3545;
+    --bs-btn-focus-shadow-rgb: 220, 53, 69;
+    --bs-btn-active-color: #FF6464;
+    --bs-btn-active-bg: #FFC7C7;
+    --bs-btn-active-border-color: #FF6464;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #FF6464;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #FF6464;
     --bs-gradient: none;
 }
 
@@ -759,6 +789,78 @@ textarea.form-control {
 .tab-content {
     padding: 12px;
 }
+
+.secondary-box-tab-wrapper {
+  .secondary-box-tab {
+    border-bottom: none;
+
+    li {
+      margin-top: 0;
+
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+
+    &.nav-tabs {
+        background-color: transparent;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 9px;
+      width: 108px;
+
+      &.active {
+        .number,
+        .label {
+          color: #0056a1;
+        }
+
+        border-color: #0056a1;
+      }
+
+      .number {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #00315d;
+      }
+
+      .label {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        margin-bottom: 0;
+        color: #888;
+        display: block;
+        white-space: nowrap;
+        max-width: calc(100% - 9px);
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .feature-tab-links {
+    height: 66px !important;
+    border-bottom: none;
+  }
+
+  .tab-content {
+    .tab-pane {
+      padding: 24px 0 0;
+    }
+  }
+}
+
 
 // dropdown menu
 // ---------------------------------------------------------------------------

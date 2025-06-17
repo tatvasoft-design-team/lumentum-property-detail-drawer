@@ -233,10 +233,6 @@ $(document).ready(function () {
   // property details drawer 13-01-25
   const swiper = new Swiper(".property-detail-swiper", {
     loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -388,7 +384,7 @@ $(document).ready(function () {
       $(this).addClass("disable");
     }
   });
-  // Scrollable tabbing
+  // End Scrollable tabbing
   // on textbox focus ------------------------------------
   $(".fl-w .form-control")
     .on("focus", function () {
