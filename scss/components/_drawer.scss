@@ -1,7 +1,7 @@
 // common styles
-@use './base/colors';
-@use './base/break-points';
-@use './base/mixins';
+@use '../base/colors';
+@use '../base/break-points';
+@use '../base/mixins';
 
 // here developer made custom common stickable drawer and applied its own stylesheet
 // So design should manage with custom class with drawer-main class, its mandatory.

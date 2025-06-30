@@ -9,9 +9,11 @@
 
 
 /* component style */
+
 @use 'components/form-elements.scss';
 @use 'components/existing-compo-styles.scss';
 @use 'components/header.scss';
+@use 'components/drawer';
 @use 'components/custom-tables.scss';
 
 /* pages style */
@@ -20,5 +22,4 @@
 
 /* resets Stylesheet */
 @use 'base/layout';
-@use 'drawer';
 @use 'style.scss';
