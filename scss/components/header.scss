@@ -52,7 +52,7 @@
 			z-index: 8;
 			background-color: colors.$darkBlue;
 			width: 280px;
-			min-height: calc(100vh - 62px);
+			min-height: calc(100dvh - 62px);
 			@include mixins.transition(all 0.5s);
 			overflow: hidden auto;
 			padding-bottom: 20px;

@@ -1,4 +1,3 @@
-// common styles
 @use '../base/colors';
 @use '../base/break-points';
 @use '../base/mixins';
@@ -7,12 +6,16 @@
 // So design should manage with custom class with drawer-main class, its mandatory.
 //  devloper structure like
 //  
+body {
+  --bg-primary-clr: #0056A1;
+}
 
 .drawer-main {
   --bs-offcanvas-width: calc(100% - 75px);
   --bs-offcanvas-padding-y: 9px;
   position: fixed;
   z-index: 91;
+  min-width: 360px;
   top: 0;
   bottom: 0;
   right: -100%;
@@ -43,7 +46,8 @@
     gap: 10px;
     color: #fff;
     display: flex;
-    align-items: center;
+    align-items: normal;
+
 
     @include break-points.bp (xs-max) {
       flex-wrap: wrap;
@@ -51,7 +55,8 @@
 
     .btn-close {
       position: absolute;
-      top: calc(50% - 12px);
+      // top: calc(50% - 12px);
+      top: 14px;
       right: 12px;
       --bs-btn-close-color: #fff;
       background-image: url(../images/ic-close-white.svg);
@@ -78,7 +83,7 @@
     .right-side {
       margin-left: auto;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 16px;
       white-space: nowrap;
 
@@ -618,5 +623,116 @@
         }
       }
     }
+  }
+}
+
+// other common drawers style
+// ---------------------------------------------------------------------------
+.drawer-main.downloads-drawer-detail {
+  width: 500px;
+  max-width: 100%;
+  z-index: 913;
+
+  @include break-points.bp("xs-max") {
+    width: 100%;
+  }
+
+  .i-30 {
+    display: block;
+
+    img {
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      object-fit: contain;
+    }
+  }
+
+  .info li .i {
+    display: flex;
+
+    img {
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      object-fit: contain;
+    }
+  }
+
+  .list>li {
+    position: relative;
+    padding-right: 40px;
+    margin-bottom: 16px;
+
+    .delete-btn {
+      position: absolute;
+      top: 4px;
+      right: -8px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      background-color: #fff;
+    }
+
+    &:hover,
+    &:focus {
+      .delete-btn {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .date-list {
+      display: flex;
+      align-items: center;
+      gap: 10px 24px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      line-height: 17px;
+
+      @include break-points.bp (xs-max) {
+        gap: 2px 12px;
+      }
+    }
+  }
+}
+
+.drawer-main.upload-attachment-drawer {
+  width: var(--bs-offcanvas-width);
+  z-index: 913;
+
+  .btn-close {
+    top: 10px;
+  }
+
+  @include break-points.bp("xs-max") {
+    width: 100%;
+  }
+
+  .disclaimer-header {
+    width: 991px;
+
+    @include break-points.bp("md-max") {
+      width: 575px;
+    }
+
+    @include break-points.bp("xs-max") {
+      width: 330px;
+    }
+  }
+}
+
+.drawer-main.scout-property-drawer {
+  width: 966px;
+  max-width: 100%;
+  z-index: 913;
+
+  .btn-close {
+    top: 10px;
+  }
+
+  @include break-points.bp("xs-max") {
+    width: 100%;
   }
 }

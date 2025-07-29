@@ -169,8 +169,29 @@
 
 				<div class="right-side">
 					<button class="btn btn-outline-white smd tx-16px">Print</button>
-					<button class="btn btn-outline-white smd tx-16px" data-bs-toggle="modal"
-						data-bs-target="#marketListModal">Add to List</button>
+					<button class="btn btn-outline-white smd with-ic tx-16px">
+						Scout Info
+						<em class="i">
+							<img src="./images/ic-page-white.svg" alt="">
+						</em>
+					</button>
+					<div class="popover-tooltip-wrapper d-inline-block">
+						<button class="btn btn-outline-white smd tx-16px popover-tooltip" data-bs-toggle="modal"
+							data-bs-target="#marketListModal" data-bs-html="true" data-bs-placement="bottom"
+							data-bs-html="true">Add to List
+							<span class="badge text-bg-light text-primary sm rounded-pill ms-1">
+								03
+							</span>
+						</button>
+						<div class="popover-content" style="display: none;">
+							<div class="add-to-list-popover">
+								<p class="text-gray06 text-xs mb-1">Test List</p>
+								<p class="text-gray06 text-xs mb-1">Duval County List</p>
+								<p class="text-gray06 text-xs">Jacksonville List</p>
+							</div>
+						</div>
+					</div>
+
 					<button type="button" class="btn-close drawer-close"></button>
 				</div>
 			</div>
@@ -3775,55 +3796,56 @@
 						<h5 class="modal-title h5" id="marketListLabel">Add to List</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
-					<div class="modal-body">
-						<div class="list-radio-group">
-							<div class="form-check-wrapper selected-radio">
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="marketList"
-										id="addToMarketingList" checked>
-									<label class="form-check-label" for="addToMarketingList">
-										Add to List
-									</label>
-								</div>
-								<div class="controls-field">
-									<div class="select2-dropdownParent">
-										<select class="custom-Select2 w-100" name="state"
-											data-placeholder="Select List">
-											<option value="" class="d-none placeholder" selected>Select List</option>
-											<option value="2">2024</option>
-											<option value="3">2023</option>
-											<option value="4">2022</option>
-										</select>
-									</div>
-								</div>
+					<div class="modal-body pb-0">
+						<div class="form-group">
+							<label class="form-label mb-1">Existing</label>
+							<div class="select2-dropdownParent">
+								<select class="custom-Select2-no-search w-100" name="state" data-placeholder="Select">
+									<option value="" class="d-none placeholder" selected>Select</option>
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+								</select>
 							</div>
-							<div class="form-check-wrapper">
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="marketList"
-										id="newMarketingList">
-									<label class="form-check-label" for="newMarketingList">
-										New List
-									</label>
-								</div>
-								<div class="controls-field">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Enter New List Name">
-									</div>
-									<div class="select2-dropdownParent">
-										<select class="custom-Select2-no-search w-100" name="state"
-											data-placeholder="Favorites">
-											<option value="" class="d-none placeholder" selected>Favorites</option>
-											<option value="1">Favorites</option>
-											<option value="2">Marketing</option>
-										</select>
-									</div>
-								</div>
+						</div>
+						<div class="form-group">
+							<label class="form-label mb-1">New</label>
+							<input type="text" class="form-control" placeholder="New List Name">
+						</div>
+						<h6 class="fw-semibold text-16 mb-10">DigiScout URL</h6>
+						<div class="row space-16">
+							<div class="col-6">
+								<button class="btn btn-outline-primary w-100">Copy Existing</button>
+							</div>
+							<div class="col-6">
+								<button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#addToListWarning">Create New</button>
 							</div>
 						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary mw">Save</button>
+						<button type="button" class="btn btn-primary mw">Add to List</button>
 						<button type="button" class="btn btn-outline-primary mw" data-bs-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal add to list warning-->
+		<div class="modal fade delete-modal" id="addToListWarning" tabindex="-1">
+			<div class="modal-dialog modal-md modal-dialog-centered">
+				<div class="modal-content">
+					<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+					<em class="i"><img src="./images/ic-warning.svg" alt="" /></em>
+					<p class="text-sm text-gray05">
+						There is already an active DigiScout Link for this list, if you continue, a new link will be generated and any previous links will cease to function.
+					</p>
+					<div class="modal-footer">
+						<button class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#marketListModal">
+							Confirm
+						</button>
+						<button class="btn btn-outline-primary" data-bs-dismiss="modal">
+							Close
+						</button>
 					</div>
 				</div>
 			</div>
@@ -3872,7 +3894,7 @@
 								</div>
 							</div>
 						</div>
-						<p class="text-12 text-gray mt-2">Please remove the tags you want deleted by clicking on the "X"
+						<p class="text-xs text-gray mt-2">Please remove the tags you want deleted by clicking on the "X"
 							or
 							enter the tags that you want attached to the selected parcel.</p>
 					</div>
@@ -3928,7 +3950,7 @@
 									</em>
 									<div>
 										<span
-											class="text-12 text-gray06 text-uppercase d-block fw-semibold">Latitude</span>
+											class="text-xs text-gray06 text-uppercase d-block fw-semibold">Latitude</span>
 										<strong class="fw-semibold">38.8951</strong>
 									</div>
 								</div>
@@ -3940,7 +3962,7 @@
 									</em>
 									<div>
 										<span
-											class="text-12 text-gray06 text-uppercase d-block fw-semibold">Longitude</span>
+											class="text-xs text-gray06 text-uppercase d-block fw-semibold">Longitude</span>
 										<strong class="fw-semibold">-77.0364</strong>
 									</div>
 								</div>
@@ -3976,7 +3998,7 @@
 					</div>
 					<div class="modal-footer flex-nowrap">
 						<button type="button" class="btn btn-outline-primary w-50">Cancel</button>
-						<button type="button" class="btn btn-primary w-50 second-level-drawer-btn"
+						<button type="button" class="btn btn-primary w-50 third-level-drawer-btn"
 							data-bs-dismiss="modal" aria-label="Close" data-drawer-btn="ScoutPropertydrawer">Save &
 							Next</button>
 					</div>
@@ -3984,11 +4006,184 @@
 			</div>
 		</div>
 
+		<!-- scout info Drawer-->
+		<div class="drawer-main scout-info-drawer" data-mcs-theme="light" data-drawer-wrapper="ScoutInfodrawer">
+			<div class="drawer-header">
+				<h5 class="drawer-title d-flex gap-2 align-items-center">Scout Info</h5>
+				<button type="button" class="btn-close second-level-drawer-close"></button>
+			</div>
+			<div class="drawer-body p-16 inner-scroll">
+				<!-- with data -->
+				<div>
+					<div class="d-flex flex-wrap align-items-center justify-content-between gap-2 scout-tab-head">
+						<h6 class="fw-bold text-16">Images</h6>
+						<div class="d-flex flex-wrap align-items-center gap-2 right-btns">
+							<label class="text-sm text-gray04">Data Collection Date :</label>
+							<div class="select2-dropdownParent">
+								<select class="custom-Select2-no-search" name="state" data-placeholder="Select List">
+									<option value="" class="d-none placeholder" selected>Select List
+									</option>
+									<option value="2">12/10/2023 (Drive By)</option>
+									<option value="3">07/01/2019 (Signs)</option>
+									<option value="4">14/07/2022 (Maintenance)</option>
+								</select>
+							</div>
+							<button class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#scoutpropertyModal">Add New Record</button>
+						</div>
+					</div>
+					<div class="row space-16 scout-tab-propertyimg-list mb-16">
+						<div class="col-6 col-sm-4 col-md-3 col-xl-auto">
+							<div class="image-uploaded-layout">
+								<em class="thumb">
+									<img src="./images/scout-1.png" />
+								</em>
+								<button class="btn ic-btn sm btn-gray btn-delete" onclick="(e)=>e.stopPropagation();">
+									<img src="images/delete-icon.svg" alt="" />
+								</button>
+								<span class="text-light text-sm text-uppercase fw-semibold">Front</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-xl-auto">
+							<div class="image-uploaded-layout">
+								<em class="thumb">
+									<img src="./images/scout-2.png" />
+								</em>
+								<button class="btn ic-btn sm btn-gray btn-delete">
+									<img src="images/delete-icon.svg" alt="" />
+								</button>
+								<span class="text-light text-sm text-uppercase fw-semibold">Back</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-xl-auto">
+							<div class="image-uploaded-layout">
+								<em class="thumb">
+									<img src="./images/scout-3.png" />
+								</em>
+								<button class="btn ic-btn sm btn-gray btn-delete">
+									<img src="images/delete-icon.svg" alt="" />
+								</button>
+								<span class="text-light text-sm text-uppercase fw-semibold">Left</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-xl-auto">
+							<div class="image-uploaded-layout">
+								<em class="thumb">
+									<img src="./images/scout-4.png" />
+								</em>
+								<button class="btn ic-btn sm btn-gray btn-delete">
+									<img src="images/delete-icon.svg" alt="" />
+								</button>
+								<span class="text-light text-sm text-uppercase fw-semibold">Right</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-xl-auto">
+							<div class="image-uploaded-layout">
+								<em class="thumb">
+									<img src="./images/scout-5.png" />
+								</em>
+								<button class="btn ic-btn sm btn-gray btn-delete">
+									<img src="images/delete-icon.svg" alt="" />
+								</button>
+								<span class="text-light text-sm text-uppercase fw-semibold">Other</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-xl-auto">
+							<div class="scout-add-img-card">
+								<em class="i"><img src="./images/add-blue.svg" alt="" /></em>
+								Add New
+							</div>
+						</div>
+					</div>
+					<div class="row space-16 mb-16">
+						<div class="col-12 col-lg">
+							<div class="outline-card h-100 mb-0">
+								<h6 class="h-title mb-16">
+									Survey Questions and Answers
+								</h6>
+								<div class="row space-16 scout-que-grid">
+									<div class="col-12 col-md-6">
+										<div class="input-val">
+											<strong class="fw-bold text-sm mb-2 d-block">1. Is the
+												property occupied?</strong>
+											<p class="text-sm fw-normal">Yes</p>
+										</div>
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="input-val">
+											<strong class="fw-bold text-sm mb-2 d-block">2. Is the
+												property occupied?</strong>
+											<p class="text-sm fw-normal">Yes</p>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 border-0">
+										<div class="input-val">
+											<strong class="fw-bold text-sm mb-2 d-block">3. How is the
+												property quality?</strong>
+											<p class="text-sm fw-normal">Excellent</p>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 border-0">
+										<div class="input-val">
+											<strong class="fw-bold text-sm mb-2 d-block">4. How is the
+												property quality?</strong>
+											<p class="text-sm fw-normal">Excellent</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg">
+							<div class="outline-card h-100 mb-0 d-flex flex-column">
+								<h6 class="h-title">
+									Note
+								</h6>
+								<div
+									class="text-sm text-gray04 flex-grow-1 d-flex align-items-center justify-content-center">
+									No notes available</div>
+							</div>
+						</div>
+					</div>
+					<div class="outline-card bg-gray mb-16">
+						<div class="row space-16">
+							<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+								<div class="input-val">
+									<label>List Name</label>
+									<p>Annette Black</p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+								<div class="input-val">
+									<label>Scouting Purpose</label>
+									<p>Drive by Survey</p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+								<div class="input-val">
+									<label>Data Collected By</label>
+									<p>Annette Black</p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+								<div class="input-val">
+									<label>Date and time of Data Collection</label>
+									<p>12/10/2023 9:30 AM</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-outline-primary" data-bs-toggle="modal"
+						data-bs-target="#deleteModal">Delete</button>
+				</div>
+			</div>
+		</div>
+		<!--END scout tab property Drawer -->
+
 		<!-- scout tab property Drawer-->
 		<div class="drawer-main scout-property-drawer" data-mcs-theme="light" data-drawer-wrapper="ScoutPropertydrawer">
 			<div class="drawer-header">
 				<h5 class="drawer-title d-flex gap-2 align-items-center">Property Information</h5>
-				<button type="button" class="btn-close second-level-drawer-close"></button>
+				<button type="button" class="btn-close third-level-drawer-close"></button>
 			</div>
 			<div class="drawer-body p-16 inner-scroll">
 				<div class="mb-24">
@@ -4255,7 +4450,7 @@
 
 				<div class="d-flex gap-3 flex-wrap">
 					<button type="button" class="btn btn-primary mw">Complete</button>
-					<button type="button" class="btn btn-outline-primary mw second-level-drawer-close">Cancel</button>
+					<button type="button" class="btn btn-outline-primary mw third-level-drawer-close">Cancel</button>
 				</div>
 			</div>
 		</div>

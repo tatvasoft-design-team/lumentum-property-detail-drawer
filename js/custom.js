@@ -136,27 +136,25 @@ $(document).ready(function () {
   });
 
   // datepicker
-  $(".inline-calendar").datepicker({
+  $(".primary-market-table-wrapper .inline-calendar").datepicker({
     todayHighlight: true,
     beforeShowDay: function (date) {
       if (date.getMonth() == new Date().getMonth())
         switch (date.getDate()) {
           case 6:
-            return "active";
+            return "tl";
           case 7:
-            return "ev";
+            return "tl-fc-td";
           case 8:
-            return "ev";
+            return "tl-fc-td";
           case 9:
-            return "ev";
-          case 15:
-            return "ev";
+            return "td";
           case 20:
-            return "ev";
+            return "fc";
           case 21:
-            return "ev";
+            return "tl-fc";
           case 27:
-            return "ev";
+            return "fc-td";
         }
     },
   });
@@ -233,6 +231,10 @@ $(document).ready(function () {
   // property details drawer 13-01-25
   const swiper = new Swiper(".property-detail-swiper", {
     loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -410,6 +412,102 @@ $(document).ready(function () {
     }
   }
 
+  // all functions here -------
+  $(".primary-market-table-wrapper .slide-arrow").on("click", function () {
+    $("html, body").toggleClass("toggle-events");
+  });
+
+  // 7-1-25
+  // pie gradient function -------
+  function setPie(e, b = "#ececec") {
+    let p = e.attr("data-val");
+    let d = Math.round((p / 100) * 360);
+    color = e.css("background-color");
+    let newBackgroundImage =
+      "conic-gradient(" +
+      color +
+      " 0deg, " +
+      color +
+      " " +
+      d +
+      "deg," +
+      b +
+      " " +
+      d +
+      "deg," +
+      b +
+      " " +
+      (360 - d) +
+      "deg)";
+    e.css("background-image", newBackgroundImage);
+  }
+
+  function setrevesePie(e, b = "#ececec") {
+    let p = e.attr("data-val");
+    let d = Math.round((p / 100) * 360);
+    color = e.css("background-color");
+    let newBackgroundImage =
+      "conic-gradient(" +
+      b +
+      " 0deg, " +
+      b +
+      " " +
+      d +
+      "deg, " +
+      color +
+      " " +
+      d +
+      "deg," +
+      color +
+      " " +
+      (360 - d) +
+      "deg)";
+    e.css("background-image", newBackgroundImage);
+  }
+  if ($(".count-map").length) {
+    for (var i = 0; i < $(".count-map").length; i++) {
+      setPie($(".count-map").eq(i));
+    }
+  }
+
+  $(".pie-chart-box .empty-pie-hightlight")
+    .mouseenter(function () {
+      if ($(".count-map").length) {
+        setrevesePie($(this).closest(".pie-chart-box").find(".count-map"));
+      }
+    })
+    .mouseleave(function () {
+      if ($(".count-map").length) {
+        setPie($(this).closest(".pie-chart-box").find(".count-map"));
+      }
+    });
+
+  // End pie gradient function -------
+
+  // user setting page
+  $(
+    ".user-setting-page .page-title .ham-btn, .user-setting-page .aside-layout-wrapper .backdrop"
+  ).on("click", function () {
+    $(".user-setting-page .aside-layout-wrapper").toggleClass("show-menu");
+  });
+
+  $(".user-setting-page .aside-layout-wrapper .submenu a").click(function (e) {
+    e.preventDefault();
+    $(".user-setting-page .aside-layout-wrapper").removeClass("show-menu");
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top - 100,
+      },
+      100
+    );
+    hash($(this).attr("href"));
+  });
+
+  $(".success-toast-btn").click(function () {
+    $(".success-toast").toast("show");
+  });
+
+  // custom drawer js
   $(document).delegate(".drawer-btn", "click", function () {
     var _this = $(this).attr("data-drawer-btn");
     $("body").addClass("drawer-open");
@@ -447,7 +545,7 @@ $(document).ready(function () {
     $("body").removeClass("third-level-drawer-open");
     $(".drawer-main").removeClass("third-level-open");
   });
-
+  // End custom drawer js
   //End property details drawer 13-01-25
 
   // 22-01-25
@@ -495,8 +593,8 @@ $(document).ready(function () {
 
   // 10-03-2025
   $(".edit-bid-box").on("click", function () {
-    if($(this).hasClass("edited")){
-    }else if($(this).hasClass("edit")) {
+    if ($(this).hasClass("edited")) {
+    } else if ($(this).hasClass("edit")) {
       $(this).addClass("d-none");
       $(this).siblings(".edit").addClass("d-none");
       $(this).siblings(".edited").removeClass("d-none");
@@ -507,9 +605,85 @@ $(document).ready(function () {
   });
   // End 10-03-2025
 
-  // all functions here -------
   $(".primary-market-table-wrapper .slide-arrow").on("click", function () {
     $("html, body").toggleClass("toggle-events");
+  });
+
+  // dropdown on body
+  document.querySelectorAll(".dropdown.onbody").forEach((dropdown) => {
+    dropdown.addEventListener("show.bs.dropdown", function () {
+      const menu = this.querySelector(".dropdown-menu");
+      document.body.appendChild(menu);
+      const rect = this.getBoundingClientRect();
+      menu.style.position = "absolute";
+      menu.style.top = `${rect.bottom}px`;
+      menu.style.left = `${rect.left}px`;
+      menu.style.zIndex = 1050;
+    });
+
+    dropdown.addEventListener("hide.bs.dropdown", function () {
+      const menu = this.querySelector(".dropdown-menu");
+      this.appendChild(menu); // move it back
+      menu.style.position = "";
+      menu.style.top = "";
+      menu.style.left = "";
+      menu.style.zIndex = "";
+    });
+  });
+
+  // popover Initialize
+  const popoverTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="popover"]'
+  );
+  const popoverList = [...popoverTriggerList].map(
+    (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+  );
+
+  // Initialize the popover manually on hover as tooltip behaviour
+  $(".popover-tooltip-wrapper").each(function () {
+    const $wrapper = $(this);
+    const $button = $wrapper.find(".popover-tooltip");
+    const $content = $wrapper.find(".popover-content");
+    const shouldShow = $button.attr("data-show") === "true";
+    let timeout;
+
+    const popover = new bootstrap.Popover($button[0], {
+      trigger: "manual",
+      html: true,
+      placement: $button.data("bs-placement"),
+      customClass: "popover-layout",
+      content: function () {
+        return $content.html();
+      },
+    });
+
+    //  Show on load if data-show="true"
+    if (shouldShow) {
+      popover.show();
+    }
+
+    function showPopover() {
+      popover.show();
+
+      setTimeout(function () {
+        const $popoverEl = $(".popover").last();
+        $popoverEl.on("mouseenter", function () {
+          clearTimeout(timeout);
+        });
+        $popoverEl.on("mouseleave", function () {
+          timeout = setTimeout(() => popover.hide(), 200);
+        });
+      }, 50);
+    }
+
+    $button.on("mouseenter", function () {
+      clearTimeout(timeout);
+      showPopover();
+    });
+
+    $button.on("mouseleave", function () {
+      timeout = setTimeout(() => popover.hide(), 200);
+    });
   });
 
   // Don't add anything below this --------------------------------------------------------------

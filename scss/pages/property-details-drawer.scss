@@ -10,6 +10,32 @@
     min-height: 15px;
 }
 
+.badge {
+    &.sm {
+       padding: 3px 7px;
+       --bs-badge-font-size: 13px;
+    }
+}
+
+.drawer-main:has(.property-drawer-detail) {
+  .drawer-header {
+    align-items: normal;
+
+      @include break-points.bp (sm-max) {
+        flex-wrap: wrap;
+        }
+
+    .right-side {
+      align-items: flex-start;
+        @include break-points.bp (sm-max) {
+        margin-left: 0;
+        gap: 10px;
+        margin-right: -30px;
+      }
+    }
+  }
+}
+
 .property-drawer-detail {
     color: #333333;
 
@@ -1561,20 +1587,6 @@
         @include break-points.bp("xs-max") {
             width: 330px;
         }
-    }
-}
-
-.drawer-main.scout-property-drawer {
-    width: 966px;
-    max-width: 100%;
-    z-index: 913;
-
-    .btn-close {
-        top: 10px;
-    }
-
-    @include break-points.bp("xs-max") {
-        width: 100%;
     }
 }
 
